@@ -11,9 +11,18 @@
         <mat-card-subtitle>All about SmartNow</mat-card-subtitle>
       </mat-card-header>
       <mat-card-actions>
-        <button mat-button>About Us</button>
-        <button mat-button>Contact Us</button>
-        <button mat-button>News</button>
+        <button mat-button
+          label="About SmartNow"
+          [title]="about_smartnow" 
+          [routerLink]="['/about_smartnow']">About Us
+        </button>
+
+        <button mat-button
+          label="Contact SmartNow"
+          [title]="contact_smartnow" 
+          [routerLink]="['/contact_smartnow']">Contact Us
+        </button>
+<!--        <button mat-button>News</button> -->
       </mat-card-actions>
     </mat-card>
   </mat-grid-tile>
@@ -29,9 +38,20 @@
         <mat-card-subtitle>Some of this is dull, but it is important! </mat-card-subtitle>
       </mat-card-header>
       <mat-card-actions>
-        <button mat-button>FAQs</button>
-        <button mat-button>Privacy Policy</button>
-        <button mat-button>Terms and Conditions</button>
+        <button mat-button
+          label="FAQs"
+          [title]="faqs" 
+          [routerLink]="['/faq']">FAQs
+        </button>
+        <button mat-button
+           label="Privacy Policy"
+          [title]="privacy_policy" 
+          [routerLink]="['/privacy_policy']">Privacy Policy
+        </button>
+        <button mat-button
+          label="Terms and Conditions"
+          [title]="terms_and_conditions" 
+          [routerLink]="['/terms_and_conditions']">Terms and Conditions</button>
       </mat-card-actions>
     </mat-card>
   </mat-grid-tile>
@@ -46,7 +66,7 @@
         <mat-card-subtitle>Mastercard, Visa, Google Pay </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        We pride ourselves on protecting your personal information.  We encrypt your customer details and all our card transactions are processed by securely by Stripe.   
+        We pride ourselves on protecting your personal information.  We encrypt your customer details and all our card transactions are processed using 3D Secure.   
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>

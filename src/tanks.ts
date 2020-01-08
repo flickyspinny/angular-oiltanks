@@ -3,6 +3,7 @@ export const tanks = [
   {
     tankId: 1,
     name: 'Harlequin 350HQi',
+    slug: 'Harlequin-350HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 780,
     old: false,
@@ -56,6 +57,7 @@ export const tanks = [
   {
     tankId: 2,
     name: 'Harlequin 650HQi',
+    slug: 'Harlequin-650HQi-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1054.80,
     old: false,
@@ -109,6 +111,7 @@ export const tanks = [
   {
     tankId: 3,
     name: 'Harlequin 1000HQi',
+    slug: 'Harlequin-1000HQi-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1234.80,
     old: false,
@@ -162,6 +165,7 @@ export const tanks = [
   {
     tankId: 4,
     name: 'Harlequin 1100HQi',
+    slug: 'Harlequin-1100HQi-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1234.80,
     old: false,
@@ -215,6 +219,7 @@ export const tanks = [
     {
     tankId: 5,
     name: 'Harlequin 1200HQi',
+    slug: 'Harlequin-1200HQi-low-profile-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1318.80,
     old: false,
@@ -268,6 +273,7 @@ export const tanks = [
   {
     tankId: 6,
     name: 'Harlequin 1225HQi',
+    slug: 'Harlequin-1225HQi-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1306.80,
     old: false,
@@ -321,6 +327,7 @@ export const tanks = [
     {
     tankId: 7,
     name: 'Harlequin 1300HQi',
+    slug: 'Harlequin-1300HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1318.80,
     old: false,
@@ -374,6 +381,7 @@ export const tanks = [
     {
     tankId: 8,
     name: 'Harlequin 1400HQi',
+    slug: 'Harlequin-1400HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1366.80,
     old: false,
@@ -427,6 +435,7 @@ export const tanks = [
     {
     tankId: 9,
     name: 'Harlequin 1450HQi',
+    slug: 'Harlequin-1450HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1110.00,
     old: false,
@@ -480,6 +489,7 @@ export const tanks = [
     {
     tankId: 10,
     name: 'Harlequin 2000HQi',
+    slug: 'Harlequin-2000HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1450.80,
     old: false,
@@ -533,6 +543,7 @@ export const tanks = [
     {
     tankId: 11,
     name: 'Harlequin 2500HQi',
+    slug: 'Harlequin-2500HQi-bunded-heating-oil-tank',
     brand: 'Harlequin',
     price: 1606.80,
     old: false,
@@ -687,6 +698,7 @@ export const tanks = [
   {
     tankId: 12,
     name: 'Diamond 1000SSL',
+    slug: 'Diamond-1000SSL-slimline-bunded-heating-oil-tank',
     brand: 'Diamond',
     price: 1234.80,
     old: false,
@@ -743,6 +755,7 @@ export const tanks = [
   {
     tankId: 13,
     name: 'Diamond 1400SSL',
+    slug: 'Diamond-1400SSL-slimline-bunded-heating-oil-tank',
     brand: 'Diamond',
     price: 1354.80,
     old: false,
@@ -797,6 +810,7 @@ export const tanks = [
   {
     tankId: 14,
     name: 'Diamond 1650HZB',
+    slug: 'Diamond-1650HZB-bunded-heating-oil-tank',
     brand: 'Diamond',
     price: 1282.80,
     old: false,
@@ -851,6 +865,7 @@ export const tanks = [
     {
     tankId: 15,
     name: 'Diamond 2700HZB',
+    slug: 'Diamond-2700HZB-bunded-heating-oil-tank',
     brand: 'Diamond',
     price: 1498.80,
     old: false,

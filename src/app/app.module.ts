@@ -31,6 +31,12 @@ import { SelectedtankPipe } from './pipes/selectedtank.pipe';
 import { TankService } from './services/tank.service';
 import { FooterComponent } from './headerandfooter/footer/footer.component';
 import { HeaderComponent } from './headerandfooter/header/header.component';
+import { AboutusComponent } from './general/aboutus/aboutus.component';
+import { ContactusComponent } from './general/contactus/contactus.component';
+import { FAQComponent } from './general/faq/faq.component';
+import { PrivacyComponent } from './general/privacy/privacy.component';
+import { TermsComponent } from './general/terms/terms.component';
+
 
 
 
@@ -49,6 +55,12 @@ import { HeaderComponent } from './headerandfooter/header/header.component';
     SelectedtankPipe,
     FooterComponent,
     HeaderComponent,
+    AboutusComponent,
+    ContactusComponent,
+    FAQComponent,
+    PrivacyComponent,
+    TermsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -72,7 +84,12 @@ import { HeaderComponent } from './headerandfooter/header/header.component';
       { path: 'boilerjuice_connected', component: BoilerjuiceconnectedComponent },
       { path: 'domestic_oil_gas_boiler_service', component: BoilerserviceComponent },
       { path: 'replace_oil_gas_boiler_heat_pump', component: HeatpumpsComponent },
-      { path: 'domestic_heating_oil_tanks/:tankId', component: TankdetailsComponent},
+      { path: 'about_smartnow', component: AboutusComponent },    
+      { path: 'contact_smartnow', component: ContactusComponent },   
+      { path: 'privacy_policy', component: PrivacyComponent },  
+      { path: 'faq', component: FAQComponent },  
+      { path: 'terms_and_conditions', component: TermsComponent },  
+      { path: 'domestic_heating_oil_tanks/:tankId/:productName', component: TankdetailsComponent},
 //      { path: 'domestic_heating_oil_tanks/:productName', component: ProductDetailsComponent },      
       { path: '**', component: OiltanksComponent },
     ])
