@@ -1,0 +1,166 @@
+
+
+<mat-accordion>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title border=2>
+        <h3>Click Here to Find a Tank!</h3>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <!-- Form start -->
+   <form [formGroup]="tankForm" (ngSubmit)="onSubmit()">
+    <button type="submit">Form Submit</button>
+
+
+      <!-- Production / out of production slider start -->
+      <mat-card class="result">
+        <mat-card-content>
+          <section class="example-section">
+            <mat-slide-toggle *ngFor="let filterOption of filterOptions"
+              class="example-margin"
+              name="{{filterOption.name}}"
+              [(ngModel)]="filterOption.checked"
+              (change)="onFilter()">
+              Include old tanks (out of production)
+            </mat-slide-toggle>
+          </section>
+        </mat-card-content>
+      </mat-card>
+      <!-- Production / out of production slider end-->
+
+      <!--volume panel start-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title border=2>
+            <h3>Search by Volume</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <!-- 0-1000 litres checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="volume0to1000">
+          0 - 1000 litres  -  only suitable for small or well-insulated homes
+        </mat-checkbox><br>
+        <!-- 1000-1500 litres checkbox-->
+        <mat-checkbox
+            class="example-margin"
+            formControlName="volume1001to1750">
+          1001 - 1750 litres - this most common size of tank
+        </mat-checkbox><br>
+        <!-- 1500-2000 litres checkbox-->
+        <mat-checkbox
+            class="example-margin"
+            formControlName="volume1751to2500">
+          1751 - 2500 litres - suitable for detached homes 
+        </mat-checkbox><br>
+
+        <!-- Over-2500 litres checkbox-->
+        <mat-checkbox
+            class="example-margin"
+            formControlName="volumeOver2501">
+          More than 2500 litres  -  suitable for massive homes!
+        </mat-checkbox><br>
+    <!--volume panel end-->
+      </mat-expansion-panel>
+
+
+      <!--shape panel start-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title border=2>
+           <h3>Search by Shape</h3>
+         </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <!-- Short checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="shapeLowProfile">
+          Low Profile (short) tanks - perfect for putting beneath a window without blocking the view
+        </mat-checkbox><br>
+
+        <!-- Tall and Thin checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            checked='true'
+            formControlName="shapeSlimline">
+          Slimline (tall and thin) tanks - perfect for hiding in a narrow gap
+        </mat-checkbox><br>
+      <p>For more options, see the Advanced Tab below</p>
+      </mat-expansion-panel>
+      <!--shape panel end-->
+
+      <!--size / dimensions panel start-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title border=2>
+            <h3>Search by Dimensions</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Dimensions panel open</p>
+      </mat-expansion-panel>
+      <!--size / dimensions panel end-->
+
+      <!--advanced panel start-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title border=2>
+            <h3>Search by Anything Else (plastic vs metal, etc)</h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Advanced Shape Options</p>
+        <!-- Cuboid checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="shapeCuboid">
+          Cuboid / rectangular tanks
+        </mat-checkbox><br>
+
+        <!-- Vertical Cylinder checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="shapeHCyl">
+            Vertical cylinder tanks (like a can of beans stood on it's end)
+        </mat-checkbox><br>
+
+        <!-- Horizontal Cylinder checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="shapeVCyl">
+            Horizontal cylinder tanks (like a can of beans laid on it's side)
+        </mat-checkbox><br>
+
+        <p>Advanced: Material Options</p>
+        <!-- Steel checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="materialSteel">
+          Steel tanks
+        </mat-checkbox><br>
+
+        <!-- Plastic checkbox-->
+        <mat-checkbox 
+            class="example-margin"
+            formControlName="materialPlastic">
+            Plastic tanks
+        </mat-checkbox><br>
+
+      </mat-expansion-panel>
+      <!--advanced panel end-->
+  
+  
+
+    </form> 
+  </mat-expansion-panel>
+
+
+
+</mat-accordion>

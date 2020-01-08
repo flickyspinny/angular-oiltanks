@@ -1,0 +1,20 @@
+/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+
+body { padding :20px; }
+
+.form-control.ng-touched.ng-invalid {
+  border: 2px solid red;
+}
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-tab-body-content {
+  padding: 30px;
+}
+
+

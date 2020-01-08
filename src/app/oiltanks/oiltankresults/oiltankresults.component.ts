@@ -1,0 +1,121 @@
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
+import { tanks } from '../../../tanks';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import  {PageEvent } from '@angular/material/paginator';
+
+//import TankService
+import { TankService } from '../../services/tank.service';
+
+@Component({
+  selector: 'app-oiltankresults',
+  templateUrl: './oiltankresults.component.html',
+  styleUrls: ['./oiltankresults.component.css'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({height: '0px', minHeight: '0'})),
+      state('expanded', style({height: '*'})),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
+})
+
+export class OiltankresultsComponent  implements OnInit  {
+
+  filter = { name: true, 
+             volume1to1000: true,
+             volume1000to1750: true,
+             volume1750to2500: true,
+             volume2500orMore: true,
+             shapeLowProfile: false,
+             shapeSlimline: false,
+             price: true, 
+             currentTank: true, 
+             oldTank: false,
+             lengthMax: 250,
+             widthMax: 200,
+             heightMax: 200,
+             internalShapeCuboid: true,
+             internalShapeHorC: true,
+             internalShapeVertC: true,
+             materialSteel: true,
+             materialPlastic: true,
+             brandDeso: true,
+             brandHarlequin: true,
+             brandTitan: true,
+             brandCarbery: true,       
+             brandDiamond: true,          
+            };
+
+  Product = tanks; 
+
+  Brands = [
+      {name: 'Deso', filterName: 'brandDeso'},
+      {name: 'Harlequin', filterName: 'brandHarlequin'},
+      {name: 'Titan', filterName: 'brandTitan'},
+      {name: 'Carbery', filterName: 'brandCarbery'},
+      {name: 'Diamond', filterName: 'brandDiamond'},
+  ];
+
+  columnsToDisplay = ['image', 'name', 'volume', 'price'];
+
+  displayedColumns: string[] = ['image', 'name', 'volume', 'price'];
+
+  public ngOnInit() {
+    this.filterChange();
+    this.columnsToDisplay;
+  }
+
+  filteredProducts = this.Product;
+
+ filterChange() {
+    this.filteredProducts = this.Product.filter(x => 
+       (((x.old === true && this.filter.oldTank) ||
+       (x.old === false && this.filter.currentTank))
+       &&
+       (( x.physicalprops.volume <= 1000 && this.filter.volume1to1000)
+       || ( x.physicalprops.volume >= 1000 && x.physicalprops.volume <=1750 && this.filter.volume1000to1750)
+       || ( x.physicalprops.volume >= 1750 && x.physicalprops.volume <=2500 && this.filter.volume1750to2500)
+       || ( x.physicalprops.volume >= 2500 && this.filter.volume2500orMore)))
+       &&
+       ((x.physicalprops.shapeType === 'low profile' && this.filter.shapeLowProfile) ||
+       (this.filter.shapeLowProfile==false))
+       &&
+       ((x.physicalprops.shapeType === 'slimline' && this.filter.shapeSlimline) ||
+       (this.filter.shapeSlimline==false))
+       &&
+       (x.physicalprops.length <=  this.filter.lengthMax) 
+       &&
+       (x.physicalprops.width <=  this.filter.widthMax) 
+       &&
+       (x.physicalprops.height <=  this.filter.heightMax)
+       &&
+       ((x.physicalprops.internalShape === 'cuboid' && this.filter.internalShapeCuboid) ||
+       (x.physicalprops.internalShape === 'horizontal cylinder' && this.filter.internalShapeHorC) ||
+       (x.physicalprops.internalShape === 'vertical cylinder' && this.filter.internalShapeVertC)) 
+       &&
+       ((x.physicalprops.material === 'plastic' && this.filter.materialPlastic) ||
+       (x.physicalprops.material === 'steel' && this.filter.materialSteel)) 
+       &&
+       ((x.brand === 'Deso' && this.filter.brandDeso) ||
+       (x.brand === 'Harlequin' && this.filter.brandHarlequin) ||
+       (x.brand === 'Titan' && this.filter.brandTitan) ||
+       (x.brand === 'Carbery' && this.filter.brandCarbery) ||
+       (x.brand === 'Diamond' && this.filter.brandDiamond))
+    );
+
+
+
+  console.log('this.filteredProducts', this.filteredProducts);
+  console.log('lowprofile', this.filter.shapeLowProfile);
+
+ }; 
+
+
+
+
+
+}

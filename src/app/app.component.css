@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+
+
+#maincontainer {
+  min-width: 768px;
+  max-width: 980px;
+  margin: auto;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 68.7vh;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<!-- Call list of tanks using the selectedTank Pipe which filters out the details of the required tank-->
+
+
+
+
+
+
+<div id="content" *ngFor="let p of (products | selectedTank: _tankId)">
+  <!-- Title -->
+  <h1>{{p.physicalprops.volume}} Litre {{p.physicalprops.shapeType | titlecase}} {{p.physicalprops.bunded | titlecase}} Oil Tank - {{p.name}}</h1>
+
+  <!--Row One: Contains prodleft, image, promo, desc, add to basket and product info -->
+  <div id="row">
+
+    <!-- Prodleft: Contains image, promo, desc -->
+    <div id="prodleft">
+      <!-- Contains tank image-->
+      <div id="image">
+         <img style="max-width:100%;
+              max-height:100%;" 
+              src={{p.image}}>
+      </div>  
+
+      <!-- Contains promotion section-->      
+      <div id="promo">
+      </div>
+
+      <!-- Contains description section-->    
+      <div id="desc">
+        <div id="boxcontent">
+          <h4>{{p.name}} - {{p.physicalprops.volume}} Litre {{p.physicalprops.shapeType | titlecase}} {{p.physicalprops.bunded | titlecase}} Heating Oil Tank</h4>
+          <p>{{p.physicalprops.volume}} litre {{p.physicalprops.bunded}} kerosene storage tank.</p>
+          <p>This quality {{p.bunded}} heating oil tank is suitable for both domestic and commercial fuel oil storage.</p>
+          <p>Supplied complete with:</p>
+     
+          <li *ngIf="p.descriptionmain.bottomfill">{{p.descriptionmain.bottomfill}}</li>    
+          <li *ngIf="p.descriptionmain.lid">{{p.descriptionmain.lid}}</li>    
+          <li *ngIf="p.descriptionmain.inspectioncap">{{p.descriptionmain.inspectioncap}}</li>    
+          <li *ngIf="p.descriptionmain.gauge">{{p.descriptionmain.gauge}}</li> 
+          <li *ngIf="p.descriptionmain.monitorpoint">{{p.descriptionmain.monitorpoint}}</li> 
+          <li *ngIf="p.descriptionmain.misc1">{{p.descriptionmain.misc1}}</li> 
+          <li *ngIf="p.descriptionmain.misc2">{{p.descriptionmain.misc2}}</li> 
+          <li *ngIf="p.descriptionmain.misc3">{{p.descriptionmain.misc3}}</li> 
+          <li *ngIf="p.descriptionmain.misc4">{{p.descriptionmain.misc4}}</li> 
+          <li *ngIf="p.descriptionmain.misc5">{{p.descriptionmain.misc5}}</li>   
+
+          <p *ngIf="p.descriptionmain.topfill">Top Outlet: {{p.descriptionmain.topfill}}</p>   
+
+          <p>Manufactured from high grade polyethylene this {{p.brand}} tank is corrosion resistant, has high impact strength and is UV stabilised. All {{p.brand}} tanks are CE marked and comply with the latest European standards.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Right hand column, contains shop section, product details -->
+    <div id="prodright">
+
+      <!-- Shop section--> 
+      <div id="addtobasket">
+        <div id="boxcontent">
+            <!--Determines template to render if old = true or false -->
+            <ng-container *ngIf="p.old then caseOldTank else caseCurrentTank">
+            </ng-container>
+
+            <!-- if a tank not in production then render this template -->
+            <ng-template #caseOldTank>
+              <div><strong>This tank is no-longer in production</strong></div> 
+              <a 
+                mat-raised-button
+                disabled=true
+                colour="warning">Not Available
+              </a>
+            </ng-template>
+
+              <!-- if a tank Currently in production then render this template -->
+            <ng-template #caseCurrentTank>
+              <!--Determines template to render if old = false depending on if it is available to buy -->
+              <ng-container *ngIf="p.shopifyFlag then caseCurrentTankAvailable else caseCurrentTankUnavailable">
+              </ng-container>
+              <!-- if p.shopify is true then render this template as product is available to buy-->
+              <ng-template #caseCurrentTankAvailable>
+                  <div>
+                <!--Manufacturer's logo -->
+                <!-- Price -->
+                  <div id="pricecontent">
+                    <div class="price" *ngIf="p.price">{{p.price| currency: 'GBP'}} 
+                    </div>
+                    <div class="priceexvat" *ngIf="p.price">{{p.price / 6 * 5 | currency: 'GBP' }} ex. VAT  
+                    </div>
+                  </div>
+
+<!-- shopify buy button -->
+                  <div id='product-component-buy-button'></div>
+                  <!--Lead time-->
+                  <!--Delivery Options-->
+                  <h3>Delivery Options</h3>
+                    <p *ngIf="p.delivery.standardcost"><strong>{{p.delivery.standardtime | titlecase}} - 
+                                                        {{p.delivery.standardcost | uppercase}}</strong></p>
+
+                    <p *ngIf="p.delivery.option1cost"><strong>{{p.delivery.option1time | titlecase}} - 
+                                                        {{p.delivery.option1cost | titlecase}}</strong></p>
+                                                        {{p.delivery.option1conditions}}
+
+                    <p *ngIf="p.delivery.option2cost"><strong>{{p.delivery.option2cost | titlecase}} - 
+                                                        {{p.delivery.option2time | titlecase}}
+                                                        {{p.delivery.option2type | titlecase}} </strong>- 
+                                                        {{p.delivery.option2conditions}}
+                    </p>
+                  </div>
+              </ng-template>
+              <!-- if p.shopify is false then render this template as product is not available to buy-->
+              <ng-template #caseCurrentTankUnavailable>
+                <a 
+                  mat-raised-button
+                  disabled=true
+                  colour="warning">Not Available
+                </a>
+                <div id='product-component-buy-button' style="display: none;"></div>
+                <p>This tank is not currently available</p>
+                <p>Please see the alternatives below</p>
+              </ng-template>
+            </ng-template>
+        </div> <!-- end of boxconteent div-->
+      </div> <!-- end of shop section -->
+
+
+       <!-- Product Specifics--> 
+      <div id="proddetails">
+        <div id="boxcontent">
+                
+          <p *ngIf="p.guarantee">Guarantee: <strong>{{p.guarantee}} Year Guarantee</strong></p>
+          <p *ngIf="p.physicalprops.material">Made From: <strong>{{p.physicalprops.material | titlecase}}</strong></p>
+          <p *ngIf="p.physicalprops.fuelType">Suitable For Fuel: <strong> {{p.physicalprops.fuelType | titlecase}}</strong></p>
+          <p *ngIf="p.physicalprops.shapeType">Tank Shape: <strong>{{p.physicalprops.shapeType | titlecase}}</strong></p>
+          <p *ngIf="p.physicalprops.bunded">Tank Type: <strong>{{p.physicalprops.bunded | titlecase}}</strong></p>
+          <p *ngIf="p.physicalprops.volume">Marketed Capacity: <strong>{{p.physicalprops.volume}} litres</strong></p>
+          <p *ngIf="p.physicalprops.brimfulVolume">Actual Capacity: <strong>{{p.physicalprops.brimfulVolume}} litres</strong></p>
+          <p *ngIf="p.physicalprops.weight">Weight: <strong>{{p.physicalprops.weight}}kg</strong></p>
+
+          <p>Dimensions (l x w x h): <strong>{{p.physicalprops.length}}cm x {{p.physicalprops.width}}cm x {{p.physicalprops.height}}cm</strong></p>
+          <p *ngIf="p.physicalprops.internalHeight">Internal Height: <strong>{{p.physicalprops.internalHeight}}cm</strong></p>
+        </div>  
+      </div>
+    </div>
+  </div>
+<!--
+  <div id="row">
+    Row two: Contains tabs
+  </div>
+  <div id="row">
+    Row three: Contains social
+  </div>-->
+</div>

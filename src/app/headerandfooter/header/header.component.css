@@ -1,0 +1,9 @@
+header {
+     min-width: 768px;
+   max-width: 980px;
+
+  height: 100px;
+  background-color: rgb(255, 187, 0);
+  margin: auto;
+  border: 1px;
+}

@@ -1,0 +1,117 @@
+.object-fit_contain { object-fit: contain }
+
+#content {
+  float: left;
+  background-color: #FFFFFF;
+   align-content: border-box;
+   box-sizing: border-box;
+   min-width: 768px;
+   max-width: 980px;
+   height: auto;
+   margin: auto;
+   width: 100%;
+}
+
+#row {
+  float: left;
+  width: 100%;
+  min-width: 768px;
+  background-color: #FFFFFF;
+}
+
+#prodleft {
+  float: left;
+  min-width: 300px;
+  width: 57%;
+  background-color: #FFFFFF;
+}
+
+#image {
+    float: left;
+    margin: 0;
+    background: #FFF;
+    position: relative;
+    padding: 4px;
+    text-align: center;
+}
+
+#promo {
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+#desc {
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+#prodright {
+  float: right;
+  width: 40%;
+  background-color: #FFFFFF;
+  padding: 10px;
+    background: #F3F3F3;
+}
+
+#addtobasket {
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-color: #FFFFFF;
+  margin: 0 0 10px;
+}
+
+
+
+#proddetails {
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+#boxcontent {
+  float: left;
+  width: 95%;
+  height: auto;
+  margin: 15px;
+  background-color: #FFFFFF;
+}
+
+#pricecontent {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin: 0px 0px 10px 0px;
+}
+/*clearfix*/
+.clearfix:before, .clearfix.after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;
+}  
+.clearfix:after {clear: both;}
+
+.clearfix {zoom: 1;}
+
+.price {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.priceexvat {
+  display: block;
+  font-size: 1em;
+  color: gray;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

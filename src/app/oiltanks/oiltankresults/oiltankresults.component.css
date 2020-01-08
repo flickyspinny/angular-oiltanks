@@ -1,0 +1,123 @@
+table {
+  width: 70%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+.tableheader {
+  font-weight: bold;
+  font-size: 117%;
+  color: black;
+}
+
+tr.oiltank-row:not(.example-expanded-row):hover {
+  background: #777;
+}
+
+tr.oiltank-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.oiltank-row td {
+  border-bottom-width: 0;
+}
+
+.oiltank-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.oiltank-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.oiltank-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.oiltank-description {
+  padding: 0px 16px 0px 16px;
+}
+
+.oiltank-description-attribution {
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%; 
+  max-height: 100%
+}
+
+#maincontainer {
+  width: 930px;
+  margin: auto;
+  border: 0px;
+}
+
+#leftcolumn {
+  max-width: 300px;
+  float: left;
+  left: 300px;
+  border: 1px;
+//  padding: 10px 10px 10px 10px;
+}
+
+.leftcolumncontent {
+  float: left;
+  width: 280px;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-color: #FF0000;
+  border-collapse:collapse;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px
+}
+
+#rightcolumn {
+  max-width: 100%;
+  float: left;
+  border: 0px;
+  padding: 0px 10px 10px 10px;
+}
+
+.rightcolumncontent {
+  float: left;
+  width: 630px;
+  background-color: #FFFFFF;
+  border-width: 0px;
+  border-collapse:collapse;
+  border-radius: 10px
+}
+
+#prodlist {
+    font-size: 14px;
+    font: bold;
+}
+
+
+/*clearfix*/
+.clearfix:before, .clearfix.after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;
+}  
+.clearfix:after {clear: both;}
+
+.clearfix {zoom: 1;}
+
+
+ /* mat-expansion-panel-header {
+    height: auto!important; 
+  }
+
+    ng-container {
+    height: auto!important; 
+  }*/

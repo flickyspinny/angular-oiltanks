@@ -1,0 +1,30 @@
+
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+
+
+footer {
+     min-width: 768px;
+   max-width: 980px;
+
+  height: 200px;
+  background-color: rgb(255, 187, 0);
+  margin: auto;
+  border: 1px;
+}
+
+mat-card {
+  width: 302px;
+  height: 182px;
+}

@@ -1,0 +1,442 @@
+<div id="maincontainer">
+
+  <div id="leftcolumn">
+    <div class="sticky-top">
+      <mat-accordion class="leftcolumncontent">
+
+  <!--      <mat-expansion-panel
+                            (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title border=2>
+              
+            </mat-panel-title>
+          </mat-expansion-panel-header>-->
+
+            <!-- Production / out of production slider start -->
+            <mat-card class="result">
+              <mat-card-content>
+                <section class="example-section">
+                  <mat-slide-toggle
+                    class="example-margin"
+                    [(ngModel)]="filter.oldTank" 
+                    (ngModelChange)="filterChange()">
+                    Include old tanks (out of production)
+                  </mat-slide-toggle>
+                </section>
+              </mat-card-content>
+            </mat-card>
+            <!-- Production / out of production slider end-->
+
+            <!--volume panel start-->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title border=2>
+                  <h3>Search by Volume</h3>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+
+
+
+              <!-- 0-1000 litres checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.volume1to1000"
+                  (ngModelChange)="filterChange()">
+                0 - 1000 litres  -  only suitable for small or well-insulated homes
+              </mat-checkbox><br>
+              <!-- 1000-1750 litres checkbox-->
+              <mat-checkbox
+                  class="example-margin"
+                  [(ngModel)]="filter.volume1000to1750"
+                  (ngModelChange)="filterChange()">
+                1000 - 1750 litres - this most common size of tank
+              </mat-checkbox><br>
+              <!-- 1500-2000 litres checkbox-->
+              <mat-checkbox
+                  class="example-margin"
+                  [(ngModel)]="filter.volume1750to2500"
+                  (ngModelChange)="filterChange()">
+                1750 - 2500 litres - suitable for detached homes 
+              </mat-checkbox><br>
+
+              <!-- 2500 or more litres checkbox-->
+              <mat-checkbox
+                  class="example-margin"
+                  [(ngModel)]="filter.volume2500orMore"
+                  (ngModelChange)="filterChange()">
+                2500 litres or more  -  suitable for massive homes!
+              </mat-checkbox><br>
+            <!--volume panel end-->
+            </mat-expansion-panel>
+
+
+            <!--shape panel start-->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title border=2>
+                <h3>Search by Shape</h3>
+              </mat-panel-title>
+              </mat-expansion-panel-header>
+
+              <!-- Low Profile checkbox-->
+              <!--TODO auto uncheck filter.shapeSlimline if this is checked-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.shapeLowProfile"
+                  (ngModelChange)="filterChange()">
+                Include only Low Profile (short) tanks - perfect for putting beneath a window without blocking the view
+              </mat-checkbox><br>
+
+              <!-- Tall and Thin checkbox-->
+              <!--TODO auto uncheck filter.shapeLowProfile if this is checked-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.shapeSlimline"
+                  ng-false-value="null"
+                  (ngModelChange)="filterChange()">
+                Include only Slimline (tall and thin) tanks - perfect for hiding in a narrow gap
+              </mat-checkbox>
+                <br>
+            <p>For more options, see the Advanced Tab below</p>
+            </mat-expansion-panel>
+            <!--shape panel end-->
+
+            <!--size / dimensions panel start-->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title border=2>
+                  <h3>Search by Dimensions</h3>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              
+              <!-- Max Length Slider-->
+              
+              <mat-slider 
+                  class="example-margin"
+                  [(ngModel)]="filter.lengthMax"
+                  (ngModelChange)="filterChange(lengthMax)"
+                  max="250"
+                  min="100"
+                  step="1"
+                  thumbLabel="true"
+                  displayValue="Maximum Length (centimetres)">
+              </mat-slider>
+              Max. length (cm)
+              <br>
+
+              <!-- Max Height Slider-->
+              <mat-slider 
+                  class="example-margin"
+                  [(ngModel)]="filter.heightMax"
+                  (ngModelChange)="filterChange()"
+                  max="200"
+                  min="100"
+                  step="1"
+                  thumbLabel="true"
+                  displayValue="Maximum Height (centimetres)"
+                  ariaLabel="Maximum Height (centimetres)">
+                  Hello
+              </mat-slider> Max. height (cm)
+              <br>
+
+              <!-- Max Width  Slider-->
+                <mat-slider 
+                    class="example-margin"
+                    [(ngModel)]="filter.widthMax"
+                    (ngModelChange)="filterChange()"
+                    max="200"
+                    min="000"
+                    step="1"
+                    thumbLabel="true"
+                    displayValue="Maximum Width">
+                </mat-slider>
+              Max. width (cm)
+              <br>
+
+
+
+            </mat-expansion-panel>
+            <!--size / dimensions panel end-->
+
+            <!--advanced panel start-->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title border=2>
+                  <h3>Search: Advanced</h3>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Advanced: Shape Options</p>
+              <!-- Cuboid checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.internalShapeCuboid"
+                  (ngModelChange)="filterChange()">
+                Cuboid / rectangular
+              </mat-checkbox><br>
+
+              <!-- Vertical Cylinder checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.internalShapeVertC"
+                  (ngModelChange)="filterChange()">
+                  Vertical cylinder
+              </mat-checkbox><br>
+
+              <!-- Horizontal Cylinder checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.internalShapeHorC"
+                  (ngModelChange)="filterChange()">
+                  Horizontal cylinder
+              </mat-checkbox><br>
+
+              <p>Advanced: Material Options</p>
+              <!-- Steel checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.materialSteel"
+                  (ngModelChange)="filterChange()">
+                Steel tanks
+              </mat-checkbox><br>
+
+              <!-- Plastic checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.materialPlastic"
+                  (ngModelChange)="filterChange()">
+                  Plastic tanks
+              </mat-checkbox><br>
+
+              <p>Advanced: Brand</p>
+              <!-- Steel checkbox-->
+      <!--       <ng-container *ngFor="let brand of Brands; let i = index;">
+                  {{i}}
+                <mat-checkbox 
+                    class="example-margin" 
+                    [(ngModel)]= "filter.Brands"
+                    (ngModelChange)="filterChange()">
+                    {{brand.name}}, {{brand.filterName}}
+                </mat-checkbox>
+                        </ng-container>-->
+              <!-- Deso checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.brandDeso"
+                  (ngModelChange)="filterChange()">
+                  Deso
+              </mat-checkbox><br>
+              <!-- Harlequin checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.brandHarlequin"
+                  (ngModelChange)="filterChange()">
+                  Harlequin
+              </mat-checkbox><br>
+              <!-- Titan checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.brandTitan"
+                  (ngModelChange)="filterChange()">
+                  Titan
+              </mat-checkbox><br>
+              <!-- Carbery checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.brandCarbery"
+                  (ngModelChange)="filterChange()">
+                  Carbery
+              </mat-checkbox><br>
+              <!-- Diamond checkbox-->
+              <mat-checkbox 
+                  class="example-margin"
+                  [(ngModel)]="filter.brandDiamond"
+                  (ngModelChange)="filterChange()">
+                  Diamond
+              </mat-checkbox><br>
+            <!--Advanced panel end-->
+            </mat-expansion-panel>
+          <!-- Search panel end -->
+          </mat-accordion>
+      <!-- sticky-top end -->
+      </div>
+    <!-- search section end-->
+
+  <!-- end leftcolumn Div-->
+  </div>
+
+
+
+
+ 
+
+
+<!--Results Column-->
+
+<!--  <div id="rightcolumn">
+    <table mat-table
+          [dataSource]="filteredProducts"
+          multiTemplateDataRows
+          class="rightcolumncontent">
+      <!--     "mat-elevation-z8"-->
+<!--     <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+        <th mat-header-cell *matHeaderCellDef> {{column}} </th> 
+        <td mat-cell *matCellDef="let element"> {{element[column]}}
+        </td>
+      </ng-container> -->
+
+
+      <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+        
+<!--    <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+          <div class="oiltank-detail"
+              [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+            <div class="oiltank-diagram"><img src={{element.image}}> -->
+              <!--Image-->
+  <!--          </div>
+
+            <div class="oiltank-description">
+              <p class="prodlist">{{element.name}}</p>
+              {{element.description}}<br>
+              Volume: <b> {{element.volume}} litres </b><br>
+              Height: <b> {{element.height}}cm</b><br>
+              Length: <b> {{element.length}}cm</b><br>
+              Width: <b>{{element.width}}cm</b><br>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+          class="oiltank-row"
+          [class.example-expanded-row]="expandedElement === element"
+          (click)="expandedElement = expandedElement === element ? null : element">
+      </tr>
+      <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+    </table> -->
+<!--End old version-->
+<!--  </div>-->
+
+  <div id="rightcolumn">
+
+
+
+
+    <table mat-table [dataSource]="filteredProducts" 
+          class="mat-elevation-z8 rightcolumncontent"
+          multiTemplateDataRows>
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+
+
+      <!-- Image Column -->
+      <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell 
+            *matCellDef="let element"
+            width=140px
+            > 
+            <a href="{{element.shopify}}"><img src="{{element.image}}"></a>
+        </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef class="tableheader">Tank</th>
+        <td mat-cell 
+            *matCellDef="let element" 
+            width=240px
+            a [routerLink]="['/domestic_heating_oil_tanks', element.tankId]"> 
+              {{element.name}}
+        </td>
+      </ng-container>
+
+      <!-- Volume Column -->
+      <ng-container matColumnDef="volume">
+        <th mat-header-cell *matHeaderCellDef class="tableheader"> Volume </th>
+        <td mat-cell 
+            *matCellDef="let element;" 
+            width=100px
+            a [routerLink]="['/domestic_heating_oil_tanks', element.tankId]" >
+             {{element.physicalprops.volume}} litres </td>
+      </ng-container>
+
+      <!-- Price Column -->
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef class="tableheader"> Price </th>
+        <td mat-cell 
+            *matCellDef="let element"
+            a [routerLink]="['/domestic_heating_oil_tanks', element.tankId]" > {{element.price | currency: 'GBP'}}</td>
+      </ng-container>
+
+     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"> 
+     <!--     {{element.name}}-->
+      </tr>
+
+
+   
+    </table>
+  </div>
+
+
+      <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+        
+ <!--   <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+          <div class="oiltank-detail"
+              [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+            <div class="oiltank-diagram"><img src={{element.image}}>
+              <!--Image-->
+        <!--    </div> -->
+
+   <!--         <div class="oiltank-description">
+              <p class="prodlist">{{element.name}}</p>
+              {{element.description}}<br>
+              Volume: <b> {{element.volume}} litres </b><br>
+              Height: <b> {{element.height}}cm</b><br>
+              Length: <b> {{element.length}}cm</b><br>
+              Width: <b>{{element.width}}cm</b><br>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+          class="oiltank-row"
+          [class.example-expanded-row]="expandedElement === element"
+          (click)="expandedElement = expandedElement === element ? null : element">
+      </tr>
+      <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+    </table> -->
+
+
+  <!-- end Div Right Column -->
+  
+<!-- end Div Main Container -->
+
+<!-- Start new version 
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> -->
+     <!-- <div class="oiltank-diagram"><img src={{element.image}}></div>-->
+<!--      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      <input matInput placeholder="First name">
+      <input matInput placeholder="Age">
+
+  </mat-expansion-panel>
+</mat-accordion>-->

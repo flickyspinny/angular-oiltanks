@@ -1,0 +1,13 @@
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
