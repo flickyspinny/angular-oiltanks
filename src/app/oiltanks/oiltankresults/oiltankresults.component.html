@@ -29,8 +29,7 @@
             <!-- Production / out of production slider end-->
 
             <!--volume panel start-->
-            <mat-expansion-panel (opened)="panelOpenState = true"
-                              (closed)="panelOpenState = false">
+            <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
                   <h3>Search by Volume</h3>
@@ -73,8 +72,7 @@
 
 
             <!--shape panel start-->
-            <mat-expansion-panel (opened)="panelOpenState = true"
-                              (closed)="panelOpenState = false">
+            <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
                 <h3>Search by Shape</h3>
@@ -105,8 +103,7 @@
             <!--shape panel end-->
 
             <!--size / dimensions panel start-->
-            <mat-expansion-panel (opened)="panelOpenState = true"
-                              (closed)="panelOpenState = false">
+            <mat-expansion-panel> 
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
                   <h3>Search by Dimensions</h3>
@@ -118,7 +115,7 @@
               <mat-slider 
                   class="example-margin"
                   [(ngModel)]="filter.lengthMax"
-                  (ngModelChange)="filterChange(lengthMax)"
+                  (ngModelChange)="filterChange()"
                   max="250"
                   min="100"
                   step="1"
@@ -163,8 +160,7 @@
             <!--size / dimensions panel end-->
 
             <!--advanced panel start-->
-            <mat-expansion-panel (opened)="panelOpenState = true"
-                                (closed)="panelOpenState = false">
+            <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
                   <h3>Search: Advanced</h3>

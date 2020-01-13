@@ -7,7 +7,6 @@ import {MatButtonModule} from '@angular/material/button';
 //import { TankService } from '../../../services/tank.service';
 import { showBuyButton } from '../../assets/buybutton.js';
 import { LocationStrategy } from '@angular/common';
-import {Router} from "@angular/router"
 
 // declare const showBuyButton: any;
 
@@ -22,7 +21,7 @@ import {Router} from "@angular/router"
 
 
 export class TankdetailsComponent implements  OnInit, AfterViewInit {
-  private _tankId: number;
+  _tankId: number;
   products=tanks;
   private sub: any;
   hello1: any;
