@@ -18,7 +18,8 @@ export function showBuyButton(shopify_id) {
   }
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'warmandsmart.myshopify.com',
+//      domain: 'warmandsmart.myshopify.com',
+      domain: 'shop.smartnowuk.com',
       storefrontAccessToken: '0e0ce2a28d9c082b4c75d2d921178d98',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {

@@ -7,3 +7,16 @@ header {
   margin: auto;
   border: 1px;
 }
+
+#phone {
+  float: right;
+  width: auto;
+  margin: 0px, 200px;
+  background-color: rgb(255, 187, 0);
+}
+#phonebox {
+  float: right;
+  width: auto;
+  margin-right: 20px;
+  background-color: rgb(255, 187, 0);
+}

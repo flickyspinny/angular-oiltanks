@@ -1,7 +1,22 @@
+#content {
+  float: left;
+  background-color: #FFFFFF;
+   align-content: border-box;
+   box-sizing: border-box;
+   min-width: 768px;
+   max-width: 980px;
+   height: auto;
+   margin: auto;
+   width: 100%;
+}
+
+
 #prodleft {
   float: left;
   min-width: 300px;
-  width: 57%;
+  width: 56%;
+  padding: 20px;
+  padding-right: 0px;
   background-color: #FFFFFF;
 }
 
@@ -30,8 +45,24 @@
 
 #prodright {
   float: right;
-  width: 40%;
+  width: 37%;
   background-color: #FFFFFF;
-  padding: 10px;
-    background: #F3F3F3;
+  padding: 20px;
+  padding-left: 0px;
+  background: #FFFFFF;
+}
+
+#proddetails {
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+#boxcontent {
+  float: left;
+  width: 95%;
+  height: auto;
+  margin: 15px;
+  background-color: #FFFFFF;
 }
