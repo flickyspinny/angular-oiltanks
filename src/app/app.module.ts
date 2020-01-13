@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { DeferLoadModule }from '@trademe/ng-defer-load';
 
 
 import { AppComponent } from './app.component';
@@ -77,6 +78,7 @@ import { TermsComponent } from './general/terms/terms.component';
     MatSlideToggleModule,
     MatButtonModule,
     MatGridListModule,
+    DeferLoadModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
       { path: 'domestic_heating_oil_tanks', component: OiltanksComponent },
