@@ -21,7 +21,7 @@
                     class="example-margin"
                     [(ngModel)]="filter.oldTank" 
                     (ngModelChange)="filterChange()">
-                    Include old tanks (out of production)
+                    Include old tanks
                   </mat-slide-toggle>
                 </section>
               </mat-card-content>
@@ -43,21 +43,29 @@
                   class="example-margin"
                   [(ngModel)]="filter.volume1to1000"
                   (ngModelChange)="filterChange()">
-                0 - 1000 litres  -  only suitable for small or well-insulated homes
+                0 - 1000 litres
               </mat-checkbox><br>
-              <!-- 1000-1750 litres checkbox-->
+              <!-- 1000-1500 litres checkbox-->
               <mat-checkbox
                   class="example-margin"
-                  [(ngModel)]="filter.volume1000to1750"
+                  [(ngModel)]="filter.volume1000to1500"
                   (ngModelChange)="filterChange()">
-                1000 - 1750 litres - this most common size of tank
+                1000 - 1500 litres
               </mat-checkbox><br>
               <!-- 1500-2000 litres checkbox-->
               <mat-checkbox
                   class="example-margin"
-                  [(ngModel)]="filter.volume1750to2500"
+                  [(ngModel)]="filter.volume1500to2000"
                   (ngModelChange)="filterChange()">
-                1750 - 2500 litres - suitable for detached homes 
+                1500 - 2000 litres
+              </mat-checkbox><br>
+
+              <!-- 2000-2500 litres checkbox-->
+              <mat-checkbox
+                  class="example-margin"
+                  [(ngModel)]="filter.volume2000to2500"
+                  (ngModelChange)="filterChange()">
+                2000 - 2500 litres
               </mat-checkbox><br>
 
               <!-- 2500 or more litres checkbox-->
@@ -65,7 +73,7 @@
                   class="example-margin"
                   [(ngModel)]="filter.volume2500orMore"
                   (ngModelChange)="filterChange()">
-                2500 litres or more  -  suitable for massive homes!
+                2500 litres or more
               </mat-checkbox><br>
             <!--volume panel end-->
             </mat-expansion-panel>
@@ -85,7 +93,7 @@
                   class="example-margin"
                   [(ngModel)]="filter.shapeLowProfile"
                   (ngModelChange)="filterChange()">
-                Include only Low Profile (short) tanks - perfect for putting beneath a window without blocking the view
+                 Low Profile (short) tanks only
               </mat-checkbox><br>
 
               <!-- Tall and Thin checkbox-->
@@ -95,7 +103,7 @@
                   [(ngModel)]="filter.shapeSlimline"
                   ng-false-value="null"
                   (ngModelChange)="filterChange()">
-                Include only Slimline (tall and thin) tanks - perfect for hiding in a narrow gap
+                Slimline (tall and thin) tanks only
               </mat-checkbox>
                 <br>
             <p>For more options, see the Advanced Tab below</p>

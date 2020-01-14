@@ -6,6 +6,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import  {PageEvent } from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 
 //import TankService
@@ -28,8 +29,9 @@ export class OiltankresultsComponent  implements OnInit  {
 
   filter = { name: true, 
              volume1to1000: true,
-             volume1000to1750: true,
-             volume1750to2500: true,
+             volume1000to1500: true,
+             volume1500to2000: true,
+             volume2000to2500: true,
              volume2500orMore: true,
              shapeLowProfile: false,
              shapeSlimline: false,
@@ -77,10 +79,11 @@ export class OiltankresultsComponent  implements OnInit  {
        (((x.old === true && this.filter.oldTank) ||
        (x.old === false && this.filter.currentTank))
        &&
-       (( x.physicalprops.volume <= 1000 && this.filter.volume1to1000)
-       || ( x.physicalprops.volume >= 1000 && x.physicalprops.volume <=1750 && this.filter.volume1000to1750)
-       || ( x.physicalprops.volume >= 1750 && x.physicalprops.volume <=2500 && this.filter.volume1750to2500)
-       || ( x.physicalprops.volume >= 2500 && this.filter.volume2500orMore)))
+       (( x.physicalprops.volume <= 1050 && this.filter.volume1to1000)
+       || ( x.physicalprops.volume >= 950 && x.physicalprops.volume <=1555 && this.filter.volume1000to1500)
+       || ( x.physicalprops.volume >= 1450 && x.physicalprops.volume <=2050 && this.filter.volume1500to2000)
+       || ( x.physicalprops.volume >= 1950 && x.physicalprops.volume <=2550 && this.filter.volume2000to2500)
+       || ( x.physicalprops.volume >= 2450 && this.filter.volume2500orMore)))
        &&
        ((x.physicalprops.shapeType === 'low profile' && this.filter.shapeLowProfile) ||
        (this.filter.shapeLowProfile==false))

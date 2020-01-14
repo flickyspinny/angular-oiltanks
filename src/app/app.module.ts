@@ -19,6 +19,7 @@ import { MaintabsComponent } from './maintabs/maintabs.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSortModule} from '@angular/material/sort';
 import { OilinsuranceComponent } from './oilinsurance/oilinsurance.component';
 import { OiltanksComponent } from './oiltanks/oiltanks/oiltanks.component';
 import { OiltankresultsComponent } from './oiltanks/oiltankresults/oiltankresults.component';
@@ -37,6 +38,7 @@ import { ContactusComponent } from './general/contactus/contactus.component';
 import { FAQComponent } from './general/faq/faq.component';
 import { PrivacyComponent } from './general/privacy/privacy.component';
 import { TermsComponent } from './general/terms/terms.component';
+import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
 
 
 
@@ -61,6 +63,7 @@ import { TermsComponent } from './general/terms/terms.component';
     FAQComponent,
     PrivacyComponent,
     TermsComponent,
+    OiltankinstallersComponent,
 
   ],
   imports: [
@@ -77,15 +80,17 @@ import { TermsComponent } from './general/terms/terms.component';
     MatExpansionModule,
     MatSlideToggleModule,
     MatButtonModule,
+    MatSortModule,
     MatGridListModule,
     DeferLoadModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
       { path: 'domestic_heating_oil_tanks', component: OiltanksComponent },
       { path: 'domestic_heating_oil_insurance', component: OilinsuranceComponent },
-      { path: 'boilerjuice_connected', component: BoilerjuiceconnectedComponent },
+      { path: 'reduce_your_heating_bills', component: BoilerjuiceconnectedComponent },
       { path: 'domestic_oil_gas_boiler_service', component: BoilerserviceComponent },
       { path: 'replace_oil_gas_boiler_heat_pump', component: HeatpumpsComponent },
+      { path: 'oil_tank_installers', component: OiltankinstallersComponent},
       { path: 'about_smartnow', component: AboutusComponent },    
       { path: 'contact_smartnow', component: ContactusComponent },   
       { path: 'privacy_policy', component: PrivacyComponent },  
@@ -94,7 +99,8 @@ import { TermsComponent } from './general/terms/terms.component';
       { path: 'domestic_heating_oil_tanks/:tankId/:productName', component: TankdetailsComponent},
 //      { path: 'domestic_heating_oil_tanks/:productName', component: ProductDetailsComponent },      
       { path: '**', component: OiltanksComponent },
-    ])
+    ],
+    {scrollPositionRestoration: 'enabled'})
   ],
   providers: [
     HttpClientModule,

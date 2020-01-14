@@ -1,9 +1,8 @@
 header {
-     min-width: 768px;
-   max-width: 980px;
-
+  min-width: 768px;
+  max-width: 980px;
   height: 100px;
-  background-color: rgb(255, 187, 0);
+  background: linear-gradient(to bottom, #2B3864 0%, #1B75BB 50%, #26A9E0 100%);
   margin: auto;
   border: 1px;
 }
@@ -12,11 +11,9 @@ header {
   float: right;
   width: auto;
   margin: 0px, 200px;
-  background-color: rgb(255, 187, 0);
 }
 #phonebox {
   float: right;
   width: auto;
   margin-right: 20px;
-  background-color: rgb(255, 187, 0);
 }
