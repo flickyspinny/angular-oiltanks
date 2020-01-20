@@ -111,15 +111,6 @@ export class OiltankresultsComponent  implements OnInit  {
        (x.brand === 'Diamond' && this.filter.brandDiamond))
     );
 
-
-
-  console.log('this.filteredProducts', this.filteredProducts);
-  console.log('lowprofile', this.filter.shapeLowProfile);
-
  }; 
-
-
-
-
 
 }

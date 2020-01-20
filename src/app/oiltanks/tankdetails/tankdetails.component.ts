@@ -46,7 +46,6 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this._tankId = +params['tankId'];
-          console.log(params);  
     });
 //    this.products.tankId = this.route.snapshot.paramMap.get('tankId');  
     // console.log(this.products);  
