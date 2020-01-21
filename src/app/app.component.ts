@@ -1,8 +1,8 @@
 
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterEvent } from '@angular/router';
-import { AngularFireAnalytics } from '@angular/fire/analytics';
 
+declare let ga: any;
 
 @Component({
   selector: 'app-root',
