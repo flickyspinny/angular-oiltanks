@@ -98,13 +98,13 @@
 
                     <p *ngIf="p.delivery.option1cost"><strong>{{p.delivery.option1time | titlecase}} - 
                                                         {{p.delivery.option1cost | titlecase}}</strong></p>
-                                                        {{p.delivery.option1conditions}}
+
 
                     <p *ngIf="p.delivery.option2cost"><strong>{{p.delivery.option2cost | titlecase}} - 
-                                                        {{p.delivery.option2time | titlecase}}
-                                                        {{p.delivery.option2type | titlecase}} </strong>- 
-                                                        {{p.delivery.option2conditions}}
+                                                        {{p.delivery.option2time | titlecase}} </strong>
                     </p>
+                    <p>{{p.delivery.conditions}}
+                    </p>  
                   </div>
               </ng-template>
               <!-- if p.shopify is false then render this template as product is not available to buy-->

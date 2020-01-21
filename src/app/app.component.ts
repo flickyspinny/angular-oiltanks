@@ -1,5 +1,8 @@
 
 import { Component } from '@angular/core';
+import { NavigationEnd, Router, RouterEvent } from '@angular/router';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
+
 
 @Component({
   selector: 'app-root',
@@ -7,34 +10,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  courses = [
-    {id: 1, name: "Kingspan ESB2500"},
-    {id: 2, name: "Harlequin HQI 1800"},
-    {id: 3, name: "Deso 1500LP"}
-  ];
 
-  onAdd() {
-    this.courses.push({id: 4, name: "course4"});
-  }
-  onRemove(course) {
-    let index = this.courses.indexOf(course);
-    this.courses.splice(index, 1);
+constructor(public router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
   }
 
-  loadCourses() {
-    this.courses = [
-      {id: 1, name: "Kingspan ESB2500"},
-      {id: 2, name: "Harlequin HQI 1800"},
-      {id: 3, name: "Deso 1500LP"}
-    ];
-  }
 
-  trackCourse(index, course) {
-      return course ? course.id: undefined;
-  }
+
+//constructor(analytics: AngularFireAnalytics) {
+//  analytics.logEvent('page_view', {page: "dashboard"});
+//  console.log('page_view');
+//}
+//     this.router.events.subscribe(event => {
+//      if (event instanceof NavigationEnd) { 
+//        analytics.logEvent(event.urlAfterRedirects);
+//        console.log(event.urlAfterRedirects);
+//        }
+//      })
+
+
+
+
 
   onChange($event) {
     console.log($event);
   }
 
 }
+
+
+
+

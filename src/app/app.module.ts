@@ -7,6 +7,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DeferLoadModule }from '@trademe/ng-defer-load';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { environment } from '../environments/environment';
+import {} from '@types/google.analytics';
 
 
 import { AppComponent } from './app.component';
@@ -40,7 +44,16 @@ import { PrivacyComponent } from './general/privacy/privacy.component';
 import { TermsComponent } from './general/terms/terms.component';
 import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
 
-
+const config = {
+      apiKey: "AIzaSyBxyVTrfNZzURbB7iAzNqb3Re0PUVm8jgI",
+      authDomain: "fir-demo-11999.firebaseapp.com",
+      databaseURL: "https://fir-demo-11999.firebaseio.com",
+      projectId: "fir-demo-11999",
+      storageBucket: "fir-demo-11999.appspot.com",
+      messagingSenderId: "523182969306",
+      appId: "1:523182969306:web:728dc4ab515f4da9c5f0e3",
+//      measurementId: "G-HRYD4GB1SQ"
+    };
 
 
 @NgModule({
@@ -66,6 +79,8 @@ import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstaller
     OiltankinstallersComponent,
 
   ],
+
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -83,6 +98,8 @@ import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstaller
     MatSortModule,
     MatGridListModule,
     DeferLoadModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAnalyticsModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
       { path: 'domestic_heating_oil_tanks', component: OiltanksComponent },
