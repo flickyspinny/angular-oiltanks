@@ -7,10 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DeferLoadModule }from '@trademe/ng-defer-load';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { environment } from '../environments/environment';
-import {} from '@types/google.analytics';
+
 
 
 import { AppComponent } from './app.component';
@@ -98,8 +96,6 @@ const config = {
     MatSortModule,
     MatGridListModule,
     DeferLoadModule,
-    AngularFireModule.initializeApp(config),
-    AngularFireAnalyticsModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
       { path: 'domestic_heating_oil_tanks', component: OiltanksComponent },
