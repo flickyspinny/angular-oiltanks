@@ -1,30 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" defer />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" defer />
+<!--  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" defer /> -->
+<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" defer />-->
   <script defer src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <meta charset="utf-8">
   <title>SmartNow - The Home of Heating Your Home for Less</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" defer />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" async>
 
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-  <script>
-    var client = ShopifyBuy.buildClient({
-      domain: 'warmandsmart.myshopify.com',
-      storefrontAccessToken: '0e0ce2a28d9c082b4c75d2d921178d98',
-    });
-    window.shopifyBuyClient = client;
-  </script> 
+
+
 </head>
 <body class="mat-app-background">
 
 
   <app-root></app-root>
 
+<!-- Google Analytics Code -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -35,8 +31,32 @@
                                            // <- remove the last line 
   </script>
 
+<!-- Load Roboto font from Google in a way that doesn't block rendering and speeds up site -->
+  <script defer type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Roboto:300,400,500' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); 
+  </script>
+
+<!-- Load Shopify buy button JS-->
+  <script defer>
+    var client = ShopifyBuy.buildClient({
+      domain: 'warmandsmart.myshopify.com',
+      storefrontAccessToken: '0e0ce2a28d9c082b4c75d2d921178d98',
+    });
+    window.shopifyBuyClient = client;
+  </script> 
 
 
 </body>
+
 
 </html>
