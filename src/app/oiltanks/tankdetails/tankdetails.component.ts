@@ -47,6 +47,15 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
     this.title = this.products[this._tankId-1].seo.title;
 //Use the titleService to set the Page Title
     this.titleService.setTitle(this.title);
+    this.meta.addTags([
+        { name: 'description', content: this.products[this._tankId-1].seo.description},
+        { name: 'keywords', content: this.products[this._tankId-1].seo.keywords },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'SmartNow Ltd' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'date', content: '2020-01-22', scheme: 'YYYY-MM-DD' },
+        { charset: 'UTF-8' }
+      ]);
 
 //     console.log("this _tankId", this._tankId);
 //     console.log("SEO Title", this.products[this._tankId-1].seo.title);

@@ -335,7 +335,9 @@ export const tanks = [
                option2type: '',
                option2time: '',
               },
-    seo:  {title: '1225 Litre Slimline Bunded Heating Oil Tank - Harlequin 1225HQi | SmartNow Ltd | SmartNowUK.com'
+    seo:  {title: '1225 Litre Slimline Bunded Heating Oil Tank - Harlequin 1225HQi | SmartNow Ltd | SmartNowUK.com',
+          keywords: '',
+          description: 'FREE 48 hour delivery | 1225 Harlequin'
 
           } 
   },
