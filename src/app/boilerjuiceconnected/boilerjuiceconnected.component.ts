@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-boilerjuiceconnected',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoilerjuiceconnectedComponent implements OnInit {
 
-  constructor() { }
+  title = 'SmartNow | Never Run Out of Oil Again and Reduce Your Bills'
 
-  ngOnInit() {
-  }
+  constructor(
+    private meta: Meta,
+    private titleService: Title){};
+
+ngOnInit() {
+      this.titleService.setTitle(this.title);
+    }
 
 }

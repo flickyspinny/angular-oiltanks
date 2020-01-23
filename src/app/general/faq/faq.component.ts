@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-faq',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FAQComponent implements OnInit {
 
-  constructor() { }
+  title = 'SmartNow - Keeping You Warm | Frequently Asked Questions | FAQs'
 
-  ngOnInit() {
-  }
+  constructor(
+    private meta: Meta,
+    private titleService: Title){};
+
+ngOnInit() {
+      this.titleService.setTitle(this.title);
+    }
 
 }

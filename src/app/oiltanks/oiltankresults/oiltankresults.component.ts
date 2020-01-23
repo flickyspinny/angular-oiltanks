@@ -7,10 +7,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import  {PageEvent } from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import { Title, Meta } from '@angular/platform-browser';
 
 
 //import TankService
 import { TankService } from '../../services/tank.service';
+
+
 
 @Component({
   selector: 'app-oiltankresults',
@@ -26,6 +29,8 @@ import { TankService } from '../../services/tank.service';
 })
 
 export class OiltankresultsComponent  implements OnInit  {
+
+title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 hour delivery available | SmartNow";
 
   filter = { name: true, 
              volume1to1000: true,
@@ -67,9 +72,23 @@ export class OiltankresultsComponent  implements OnInit  {
 
   displayedColumns: string[] = ['image', 'name', 'volume', 'price'];
 
+  constructor(
+    private meta: Meta,
+    private titleService: Title){};
+
   public ngOnInit() {
     this.filterChange();
     this.columnsToDisplay;
+    this.titleService.setTitle(this.title);
+          this.meta.addTags([
+        { name: 'description', content: "FREE 48 hour delivery on your new bunded heating oil tank from SmartNow, the largest independent retailer of oil tanks in the UK.  Every tank available in the UK listed and compared"},
+        { name: 'keywords', content: 'free delivery, Domestic Heating Oil Tank, bunded tank, slimline tank, oil tanks, diesel tanks, kerosene tanks, deso tanks, harlequin tanks, titan tanks, carbery tanks, diamond tanks, envirostore tanks' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'SmartNow Ltd' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'date', content: '2020-01-22', scheme: 'YYYY-MM-DD' },
+        { charset: 'UTF-8' }
+      ]);
   }
 
   filteredProducts = this.Product;

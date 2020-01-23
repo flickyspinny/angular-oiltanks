@@ -10,6 +10,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_350_2048x2048.jpg?v=1578329635',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_350_2048x2048.jpg?v=1578329635',
+    imagealt: 'Harlequin 350HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4394263314498',
@@ -51,7 +52,10 @@ export const tanks = [
                option2type: '',
                option2time: '',
                option2conditions: ''
-              }
+              },
+    seo:  {title: '350 Litre Bunded Heating Oil Tank - Harlequin 350HQi | SmartNow Ltd | SmartNowUK.com'
+
+          }
   },
 
   {
@@ -64,6 +68,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_650_2048x2048.jpg?v=1578342030',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_650_2048x2048.jpg?v=1578342030',
+    imagealt: 'Harlequin 650HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424748433474',
@@ -105,7 +110,10 @@ export const tanks = [
                option2type: '',
                option2time: '',
                option2conditions: ''
-              }
+              },
+    seo:  {title: '650 Litre Super Slimline Bunded Heating Oil Tank - Harlequin 650HQi | SmartNow Ltd | SmartNowUK.com'
+
+          }            
   },
 
   {
@@ -118,6 +126,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1000_2048x2048.jpg?v=1578343212',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1000_2048x2048.jpg?v=1578343212',
+    imagealt: 'Harlequin 1000HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424767209538',
@@ -157,7 +166,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1000 Litre Super Slimline Bunded Heating Oil Tank - Harlequin 1000HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
   {
@@ -170,6 +182,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1100_2048x2048.jpg?v=1578343605',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1100_2048x2048.jpg?v=1578343605',
+    imagealt: 'Harlequin 1100HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424772616258',
@@ -209,7 +222,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1100 Litre Slimline Bunded Heating Oil Tank - Harlequin 1100HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -222,6 +238,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1200_2048x2048.jpg?v=1578344171',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1200_2048x2048.jpg?v=1578344171',
+    imagealt: 'Harlequin 1200HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424778383426',
@@ -261,7 +278,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1200 Litre Low Profile Bunded Heating Oil Tank - Harlequin 1200HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
   {
@@ -274,6 +294,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1225_2048x2048.jpg?v=1578345079',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1225_2048x2048.jpg?v=1578345079',
+    imagealt: 'Harlequin 1225HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424791195714',
@@ -313,7 +334,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1225 Litre Slimline Bunded Heating Oil Tank - Harlequin 1225HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -326,6 +350,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1300_2048x2048.jpg?v=1578346074',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1300_2048x2048.jpg?v=1578346074',
+    imagealt: 'Harlequin 1300HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424802271298',
@@ -365,7 +390,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1300 Litre Bunded Heating Oil Tank - Harlequin 1300HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -378,6 +406,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1400_2048x2048.jpg?v=1578345587',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1400_2048x2048.jpg?v=1578345587',
+    imagealt: 'Harlequin 1400HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424798961730',
@@ -417,7 +446,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1400 Litre Bunded Heating Oil Tank - Harlequin 1400HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -430,6 +462,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1450_2048x2048.jpg?v=1578346840',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1450_2048x2048.jpg?v=1578346840',
+    imagealt: 'Harlequin 1450HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424806891586',
@@ -469,7 +502,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1450 Litre Bunded Heating Oil Tank - Harlequin 1450HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -482,6 +518,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2000_2048x2048.jpg?v=1578347133',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2000_2048x2048.jpg?v=1578347133',
+    imagealt: 'Harlequin 2000HQi bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424808628290',
@@ -521,7 +558,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '2000 Litre Bunded Heating Oil Tank - Harlequin 2000HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
     {
@@ -534,6 +574,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2500_2048x2048.jpg?v=1578347419',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2500_2048x2048.jpg?v=1578347419',
+    imagealt: 'Harlequin 2500HQi bunded domestic heating oil tank',
     description: 'A large bunded tank',
     shopifyFlag: true,
     shopify_id: '4424810594370',
@@ -573,7 +614,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '2500 Litre Bunded Heating Oil Tank - Harlequin 2500HQi | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 //End of Harlequin Tanks 
 
@@ -687,6 +731,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1000SSL_2048x2048.png?v=1578322768',  
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1000SSL_2048x2048.png?v=1578322768',  
+    imagealt: 'Diamond 1000SSL super slimline bunded domestic heating oil tank',
     description: 'A slimline bunded tank',
     shopifyFlag: true,
 //    shopify: 'https://warmandsmart.myshopify.com/products/harlequin-hqi1800',  
@@ -729,7 +774,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1000 Litre Super Slimline Bunded Heating Oil Tank - Diamond 1000SSL | SmartNow Ltd | SmartNowUK.com'
+
+          } 
   },
 
   {
@@ -742,6 +790,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1400SSL_2048x2048.png?v=1578323640',  
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1400SSL_2048x2048.png?v=1578323640',  
+    imagealt: 'Diamond 1400SSL super slimline bunded domestic heating oil tank',
     description: 'A slimline bunded tank',
     shopifyFlag: true,
     shopify_id: '4424583577666',
@@ -782,7 +831,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1400 Litre Super Slimline Bunded Heating Oil Tank - Diamond 1400SSL | SmartNow Ltd | SmartNowUK.com'
+
+          }
   },
 
   {
@@ -795,6 +847,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1650HSL_2048x2048.png?v=1578326083',  
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_1650HSL_2048x2048.png?v=1578326083',  
+    imagealt: 'Diamond 1650HZB bunded domestic heating oil tank',
     description: 'A high-quality bunded tank',
     shopifyFlag: true,
     shopify_id: '4424630173762',
@@ -835,7 +888,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '1650 Litre Super Slimline Bunded Heating Oil Tank - Diamond 1650HZB | SmartNow Ltd | SmartNowUK.com'
+
+          }
   },
 
     {
@@ -848,6 +904,7 @@ export const tanks = [
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_2700HZB.png?v=1578328148',  
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_2700HZB.png?v=1578328148',  
+    imagealt: 'Diamond 2700HZB bunded domestic heating oil tank',
     description: 'A high-quality bunded tank',
     shopifyFlag: true,
     shopify_id: '4424642756674',
@@ -888,7 +945,10 @@ export const tanks = [
                option2cost: '',
                option2type: '',
                option2time: '',
-              }
+              },
+    seo:  {title: '2700 Litre Super Slimline Bunded Heating Oil Tank - Diamond 2700HZB | SmartNow Ltd | SmartNowUK.com'
+
+          }
   },
 // End Diamond Tanks
 

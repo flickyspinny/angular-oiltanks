@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterEvent } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 declare let ga: any;
 
@@ -9,9 +10,13 @@ declare let ga: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-constructor(public router: Router) {
+title = 'SmartNow - Keeping You Warm | Oil Tanks | Tank Installs | Huge Electricity Bill Savings | Never Run Out of Oil Again';
+
+constructor(public router: Router, 
+            private meta: Meta,
+            private titleService: Title) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
@@ -20,7 +25,18 @@ constructor(public router: Router) {
     });
   }
 
-
+ngOnInit() {
+      this.titleService.setTitle(this.title);
+      this.meta.addTags([
+        { name: 'description', content: "Shop from the largest range of Heating Oil tanks - Buy with Confidence from the UK's Largest Independent Online Fuel Tank Retailer"},
+        { name: 'keywords', content: 'Domestic Heating Oil Tank, BoilerJuice Connected, Bulb, oil tank installer, bunded tank, slimline tank, oil tanks, diesel tanks, kerosene tanks, deso tanks, harlequin tanks, titan tanks, carbery tanks, diamond tanks, envirostore tanks' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'SmartNow Ltd' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'date', content: '2020-01-22', scheme: 'YYYY-MM-DD' },
+        { charset: 'UTF-8' }
+      ]);
+}
 
 //constructor(analytics: AngularFireAnalytics) {
 //  analytics.logEvent('page_view', {page: "dashboard"});

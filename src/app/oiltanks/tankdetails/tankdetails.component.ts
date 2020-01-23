@@ -2,21 +2,17 @@ import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, RouterModule, Router} from '@angular/router';
 import { tanks } from '../../../tanks';
 import { SelectedtankPipe } from '../../pipes/selectedtank.pipe';
-// import  Buybutton from '../../assets/buybutton.js';
 import {MatButtonModule} from '@angular/material/button';
-//import { TankService } from '../../../services/tank.service';
 import { showBuyButton } from '../../assets/buybutton.js';
 import { LocationStrategy } from '@angular/common';
+import { Title, Meta } from '@angular/platform-browser';
 
-// declare const showBuyButton: any;
 
 
 @Component({
   selector: 'app-tankdetails',
   templateUrl: './tankdetails.component.html',
   styleUrls: ['./tankdetails.component.css'],
-  
-//  providers: [TankService]
 })
 
 
@@ -26,18 +22,18 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   private sub: any;
   hello1: any;
   booleanOldTank;
-
+  title;
 
 
   constructor(
     private route: ActivatedRoute,
     private location: LocationStrategy,
-    private router: Router
+    private router: Router,
+    private meta: Meta,
+    private titleService: Title
     ) 
     { 
       this.location.onPopState(() => {
-        // history.pushState(null, null, window.location.href);
-        // window.location.href = '/domestic_heating_oil_tanks';
         this.router.navigate(['/domestic_heating_oil_tanks']);
       });
     }
@@ -46,11 +42,16 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this._tankId = +params['tankId'];
-    });
-//    this.products.tankId = this.route.snapshot.paramMap.get('tankId');  
-    // console.log(this.products);  
-    // console.log("this _tankId", this._tankId);
+      });
+//Set the instance of the title variable (this.title) to the value in seo.title in tanks.ts
+    this.title = this.products[this._tankId-1].seo.title;
+//Use the titleService to set the Page Title
+    this.titleService.setTitle(this.title);
+
+//     console.log("this _tankId", this._tankId);
+//     console.log("SEO Title", this.products[this._tankId-1].seo.title);
     
+
   }
   
   ngAfterViewInit() {

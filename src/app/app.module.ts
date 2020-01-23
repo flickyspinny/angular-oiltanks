@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title, Meta } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -8,6 +8,7 @@ import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DeferLoadModule }from '@trademe/ng-defer-load';
 import { environment } from '../environments/environment';
+
 
 
 

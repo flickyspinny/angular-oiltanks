@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-heatpumps',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeatpumpsComponent implements OnInit {
 
-  constructor() { }
+  title = 'Reduce your bills with a Heatpump - Get 3 Free Quotes Online';
 
-  ngOnInit() {
-  }
+  constructor(
+    private meta: Meta,
+    private titleService: Title){};
+
+ngOnInit() {
+      this.titleService.setTitle(this.title);
+    }
 
 }
