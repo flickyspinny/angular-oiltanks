@@ -80,15 +80,10 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
     this.filterChange();
     this.columnsToDisplay;
     this.titleService.setTitle(this.title);
-          this.meta.addTags([
-        { name: 'description', content: "FREE 48 hour delivery on your new bunded heating oil tank from SmartNow, the largest independent retailer of oil tanks in the UK.  Every tank available in the UK listed and compared"},
-        { name: 'keywords', content: 'free delivery, Domestic Heating Oil Tank, bunded tank, slimline tank, oil tanks, diesel tanks, kerosene tanks, deso tanks, harlequin tanks, titan tanks, carbery tanks, diamond tanks, envirostore tanks' },
-        { name: 'robots', content: 'index, follow' },
-        { name: 'author', content: 'SmartNow Ltd' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'date', content: '2020-01-22', scheme: 'YYYY-MM-DD' },
-        { charset: 'UTF-8' }
-      ]);
+    this.meta.updateTag(
+        {name: 'description', content: "FREE 48 hour delivery on your new bunded heating oil tank from SmartNow, the largest independent retailer of oil tanks in the UK.  Every tank available in the UK listed and compared"});
+this.meta.updateTag(
+        {name: 'keywords', content: 'free delivery, Domestic Heating Oil Tank, bunded tank, slimline tank, oil tanks, diesel tanks, kerosene tanks, deso tanks, harlequin tanks, titan tanks, carbery tanks, diamond tanks, envirostore tanks' });
   }
 
   filteredProducts = this.Product;

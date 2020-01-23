@@ -17,7 +17,7 @@ export class OiltankinstallersComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle(this.title);
     this.metaTagService.updateTag(
-      { name: 'description', content: 'Find and get quotes from oil tank installers in the UK' }
+      { name: 'description', content: 'Get three FREE quotes instantly online from the best local tank installers.' }
     );
   }
 }
