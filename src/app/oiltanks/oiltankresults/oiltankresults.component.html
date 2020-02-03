@@ -14,7 +14,7 @@
           </mat-expansion-panel-header>-->
 
             <!-- Production / out of production slider start -->
-            <mat-card class="result">
+<!--            <mat-card class="result">
               <mat-card-content>
                 <section class="example-section">
                   <mat-slide-toggle
@@ -25,14 +25,14 @@
                   </mat-slide-toggle>
                 </section>
               </mat-card-content>
-            </mat-card>
+            </mat-card> -->
             <!-- Production / out of production slider end-->
 
             <!--volume panel start-->
             <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
-                  <h3>Search by Volume</h3>
+                  <h4>Search by Volume</h4>
                 </mat-panel-title>
               </mat-expansion-panel-header>
 
@@ -83,7 +83,7 @@
             <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
-                <h3>Search by Shape</h3>
+                <h4>Search by Shape</h4>
               </mat-panel-title>
               </mat-expansion-panel-header>
 
@@ -114,7 +114,7 @@
             <mat-expansion-panel> 
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
-                  <h3>Search by Dimensions</h3>
+                  <h4>Search by Dimensions</h4>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               
@@ -171,7 +171,7 @@
             <mat-expansion-panel>
               <mat-expansion-panel-header>
                 <mat-panel-title border=2>
-                  <h3>Search: Advanced</h3>
+                  <h4>Search: Advanced</h4>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <p>Advanced: Shape Options</p>
@@ -214,7 +214,7 @@
                   [(ngModel)]="filter.materialPlastic"
                   (ngModelChange)="filterChange()">
                   Plastic tanks
-              </mat-checkbox><br>
+              </mat-checkbox><br><br>
 
               <p>Advanced: Brand</p>
               <!-- Steel checkbox-->
@@ -261,7 +261,17 @@
                   [(ngModel)]="filter.brandDiamond"
                   (ngModelChange)="filterChange()">
                   Diamond
-              </mat-checkbox><br>
+              </mat-checkbox><br><br>
+
+              <p>Advanced: Out of Production</p>
+                          <!-- Production / out of production slider start -->
+              <mat-slide-toggle
+                class="example-margin"
+                [(ngModel)]="filter.oldTank" 
+                (ngModelChange)="filterChange()">
+                Include old tanks
+              </mat-slide-toggle>
+            <!-- Production / out of production slider end-->
             <!--Advanced panel end-->
             </mat-expansion-panel>
           <!-- Search panel end -->

@@ -1,6 +1,6 @@
 export const tanks = [
 //Start of Harlequin Tanks 
-  {
+/*  {
     tankId: 1,
     name: 'Harlequin 350ITE',
     slug: 'Harlequin-350ITE-bunded-heating-oil-tank',
@@ -62,14 +62,14 @@ export const tanks = [
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
         } 
-  },
+  },*/
 
   {
     tankId: 2,
     name: 'Harlequin 650ITE',
     slug: 'Harlequin-650ITE-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1126.80,
+    price: 1050.00,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%20650.jpg',
@@ -133,7 +133,7 @@ export const tanks = [
     name: 'Harlequin 1000ITE',
     slug: 'Harlequin-1000ITE-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1306.80,
+    price: 1230.00,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201000.jpg',
@@ -195,7 +195,7 @@ export const tanks = [
     name: 'Harlequin 1100ITE',
     slug: 'Harlequin-1100ITE-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1306.80,
+    price: 1254.00,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201100.jpg',
@@ -257,7 +257,7 @@ export const tanks = [
     name: 'Harlequin 1200ITE',
     slug: 'Harlequin-1200ITE-low-profile-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1390.80,
+    price: 1294.80,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201200.jpg',
@@ -319,7 +319,7 @@ export const tanks = [
     name: 'Harlequin 1225ITE',
     slug: 'Harlequin-1225ITE-slimline-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1378.80,
+    price: 1278.00,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201225.jpg',
@@ -381,7 +381,7 @@ export const tanks = [
     name: 'Harlequin 1300ITE',
     slug: 'Harlequin-1300ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1390.80,
+    price: 1294.80,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201300.jpg',
@@ -506,7 +506,7 @@ export const tanks = [
     name: 'Harlequin 1450ITE',
     slug: 'Harlequin-1450ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1218.00,
+    price: 1162.80,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%201450.jpg',
@@ -568,7 +568,7 @@ export const tanks = [
     name: 'Harlequin 2000ITE',
     slug: 'Harlequin-2000ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1402.80,
+    price: 1482.00,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%202000.jpg',
@@ -630,7 +630,7 @@ export const tanks = [
     name: 'Harlequin 2500ITE',
     slug: 'Harlequin-2500ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1678.80,
+    price: 1594.80,
     old: false,
     guarantee: 10,
     image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%202500.jpg',
