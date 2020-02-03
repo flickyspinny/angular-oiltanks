@@ -8,6 +8,13 @@ import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DeferLoadModule }from '@trademe/ng-defer-load';
 import { environment } from '../environments/environment';
+import {LayoutModule} from '@angular/cdk/layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
@@ -42,6 +49,7 @@ import { FAQComponent } from './general/faq/faq.component';
 import { PrivacyComponent } from './general/privacy/privacy.component';
 import { TermsComponent } from './general/terms/terms.component';
 import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
+
 
 const config = {
       apiKey: "AIzaSyBxyVTrfNZzURbB7iAzNqb3Re0PUVm8jgI",
@@ -81,6 +89,7 @@ const config = {
 
 
   imports: [
+    LayoutModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -96,10 +105,15 @@ const config = {
     MatButtonModule,
     MatSortModule,
     MatGridListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
     DeferLoadModule,
+    FlexLayoutModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
-      { path: 'domestic_heating_oil_tanks', component: OiltanksComponent },
+      { path: 'domestic_heating_oil_tanks', component: OiltankresultsComponent },
       { path: 'domestic_heating_oil_insurance', component: OilinsuranceComponent },
       { path: 'reduce_your_heating_bills', component: BoilerjuiceconnectedComponent },
       { path: 'domestic_oil_gas_boiler_service', component: BoilerserviceComponent },

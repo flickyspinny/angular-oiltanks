@@ -68,9 +68,9 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
       {name: 'Diamond', filterName: 'brandDiamond'},
   ];
 
-  columnsToDisplay = ['image', 'name', 'volume', 'price'];
+  columnsToDisplay = ['image', 'name', 'price'];
 
-  displayedColumns: string[] = ['image', 'name', 'volume', 'price'];
+  displayedColumns: string[] = ['image', 'name', 'price'];
 
   constructor(
     private meta: Meta,

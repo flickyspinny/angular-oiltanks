@@ -1,7 +1,54 @@
-
-<header>
-  <img src="https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/testBIsles4.png?alt=media&token=fa4f5342-421c-4687-81cd-0b67a3491f05" height=90px>
-
-  <div id="phonebox">
-  <div id="phone"><h2 style="color:white">0330 001 0212</h2></div></div>
+<!-- Show this version if size is greater than sm-->
+<div fxHide fxShow.gt-sm class="container">
+<!--<div class="container">-->
+  <header>
+    <div class="row">
+      <div class="col">
+        <img src="https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/testBIsles4.png?alt=media&token=fa4f5342-421c-4687-81cd-0b67a3491f05" alt="SmartNow logo" height=90px>
+      </div>
+      <div class="col">      
+          <h2 style="color:white; text-align:right; padding:20px 30px 0px 0px">0330 001 0212</h2>
+      </div>
+    </div>
   </header>
+</div>
+
+<!-- Show this version if size is less than md-->
+<div fxHide fxShow.lt-md>
+  <header>
+    <div class="row">
+      <div class="col">    
+        <!--  <button mat-icon-button (click)="sidenav.toggle()"><mat-icon style="color:white">menu</mat-icon></button>-->
+        <img src="https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/SmartNow.png?alt=media&token=78d0c237-3c78-48c7-bee1-3210126bae6b" alt="SmartNow logo" height=40px>
+      </div>
+    </div>  
+  </header>
+
+</div>
+
+  
+<!--</div> -->
+
+
+
+<!--
+    <header>
+    <div class="row">
+      <div class="col">
+        <div fxHide fxShow.gt-sm>
+          <img src="https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/testBIsles4.png?alt=media&token=fa4f5342-421c-4687-81cd-0b67a3491f05" alt="SmartNow logo" height=90px>
+        </div>
+        <div fxHide fxShow.lt-md>
+
+
+            <img src="https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/SmartNow.png?alt=media&token=78d0c237-3c78-48c7-bee1-3210126bae6b" alt="SmartNow logo" height=40px>
+        </div>
+      </div>
+      <div class="col">      
+        <div fxHide fxShow.gt-sm>
+          <h2 style="color:white; text-align:right; padding:20px 30px 0px 0px">0330 001 0212</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+-->

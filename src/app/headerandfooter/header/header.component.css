@@ -1,19 +1,17 @@
-header {
+/*header {
   min-width: 768px;
   max-width: 980px;
   height: 100px;
   background: linear-gradient(to bottom, #2B3864 0%, #1B75BB 50%, #26A9E0 100%);
   margin: auto;
   border: 1px;
+}*/
+header {
+    background: linear-gradient(to bottom, #2B3864 0%, #1B75BB 50%, #26A9E0 100%);
 }
-
-#phone {
-  float: right;
-  width: auto;
-  margin: 0px, 200px;
-}
-#phonebox {
-  float: right;
-  width: auto;
-  margin-right: 20px;
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

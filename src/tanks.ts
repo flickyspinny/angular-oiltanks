@@ -5,7 +5,7 @@ export const tanks = [
     name: 'Harlequin 350ITE',
     slug: 'Harlequin-350ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 780,
+    price: 702,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_350_2048x2048.jpg?v=1578329635',
@@ -56,7 +56,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 350 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 350, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 350ITE 350 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
   {
@@ -83,7 +89,7 @@ export const tanks = [
                   internalShape: 'cuboid',
                   material: 'plastic',
                   bunded: 'bunded', 
-                  fuelType: 'Heating Oil, Diesel, Gas Oil '
+                  fuelType: 'Heating Oil, Diesel, Gas Oil'
                 },
     descriptionmain: {description: 'A small bunded tank',
                       topfill: 'Optional - contact us to order', 
@@ -115,7 +121,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 650 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 650, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 650ITE 650 litre low profile bunded heating oil tank. 10 yr guarantee."
-          }            
+          }     ,
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }       
   },
 
   {
@@ -172,7 +184,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 1000 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1000, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1000ITE 1000 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          } ,
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }
   },
 
   {
@@ -229,7 +247,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 1100 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1100, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1100ITE 1100 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          } ,
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }
   },
 
     {
@@ -286,7 +310,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 1200 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1200, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1200ITE 1200 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
   {
@@ -343,20 +373,26 @@ export const tanks = [
     seo:  {title: 'Harlequin 1225 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1225, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1225ITE 1225 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
     {
     tankId: 7,
-    name: 'Harlequin 1300HQi',
-    slug: 'Harlequin-1300HQi-bunded-heating-oil-tank',
+    name: 'Harlequin 1300ITE',
+    slug: 'Harlequin-1300ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1318.80,
+    price: 1390.80,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1300_2048x2048.jpg?v=1578346074',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1300_2048x2048.jpg?v=1578346074',
-    imagealt: 'Harlequin 1300HQi bunded domestic heating oil tank',
+    imagealt: 'Harlequin 1300ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424802271298',
@@ -400,20 +436,26 @@ export const tanks = [
     seo:  {title: 'Harlequin 1300 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1300, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1300ITE 1300 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
     {
     tankId: 8,
-    name: 'Harlequin 1400HQi',
-    slug: 'Harlequin-1400HQi-bunded-heating-oil-tank',
+    name: 'Harlequin 1400ITE',
+    slug: 'Harlequin-1400ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1366.80,
+    price: 1426.80,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1400_2048x2048.jpg?v=1578345587',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1400_2048x2048.jpg?v=1578345587',
-    imagealt: 'Harlequin 1400HQi bunded domestic heating oil tank',
+    imagealt: 'Harlequin 1400ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424798961730',
@@ -458,20 +500,26 @@ export const tanks = [
           keywords: 'oil tank, bunded, harlequin, 1400, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1400ITE 1400 litre low profile bunded heating oil tank. 10 yr guarantee."
 
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
     {
     tankId: 9,
-    name: 'Harlequin 1450HQi',
-    slug: 'Harlequin-1450HQi-bunded-heating-oil-tank',
+    name: 'Harlequin 1450ITE',
+    slug: 'Harlequin-1450ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1110.00,
+    price: 1218.00,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1450_2048x2048.jpg?v=1578346840',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_1450_2048x2048.jpg?v=1578346840',
-    imagealt: 'Harlequin 1450HQi bunded domestic heating oil tank',
+    imagealt: 'Harlequin 1450ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424806891586',
@@ -515,20 +563,26 @@ export const tanks = [
     seo:  {title: 'Harlequin 1450 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 1450, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1450ITE 1100 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }
   },
 
     {
     tankId: 10,
-    name: 'Harlequin 2000HQi',
-    slug: 'Harlequin-2000HQi-bunded-heating-oil-tank',
+    name: 'Harlequin 2000ITE',
+    slug: 'Harlequin-2000ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1450.80,
+    price: 1402.80,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2000_2048x2048.jpg?v=1578347133',
     image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2000_2048x2048.jpg?v=1578347133',
-    imagealt: 'Harlequin 2000HQi bunded domestic heating oil tank',
+    imagealt: 'Harlequin 2000ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
     shopify_id: '4424808628290',
@@ -572,8 +626,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 2000 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 2000, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 2000ITE 2000 litre low profile bunded heating oil tank. 10 yr guarantee."
-
-          } 
+          },
+      promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        } 
   },
 
     {
@@ -581,7 +640,7 @@ export const tanks = [
     name: 'Harlequin 2500ITE',
     slug: 'Harlequin-2500ITE-bunded-heating-oil-tank',
     brand: 'Harlequin',
-    price: 1606.80,
+    price: 1678.80,
     old: false,
     guarantee: 10,
     image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Harlequin_2500_2048x2048.jpg?v=1578347419',
@@ -630,8 +689,13 @@ export const tanks = [
     seo:  {title: 'Harlequin 2500 litre ITE Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, harlequin, 2500, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 2500ITE 2500 litre low profile bunded heating oil tank. 10 yr guarantee."
-
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }
   },
 //End of Harlequin Tanks 
 
@@ -693,7 +757,13 @@ export const tanks = [
     seo:  {title: 'Diamond 1000 Litre SSL Super Slimline Bunded Oil Tank',
           keywords: 'oil tank, bunded, diamond, 1000, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1000SSL 1000 litre low profile bunded heating oil tank. 10 yr guarantee."
-          } 
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+        }
   },
 
   {
@@ -751,7 +821,13 @@ export const tanks = [
     seo:  {title: 'Diamond 1400 Litre SSL Super Slimline Bunded Oil Tank',
           keywords: 'oil tank, bunded, diamond, 1400, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1400SSL 1400 litre low profile bunded heating oil tank. 10 yr guarantee."
-          }
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+            }
   },
 
   {
@@ -809,9 +885,15 @@ export const tanks = [
     seo:  {title: 'Diamond 1650 Litre HZB Bunded Oil Tank | SmartNow',
           keywords: 'oil tank, bunded, diamond, 1650, CE-mark, 24 hour deliver, 48 hour delivery',
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1650HZB 1650 litre low profile bunded heating oil tank. 10 yr guarantee."
-          }
-  },
-
+          },
+    promo:   {include: true,
+              image: "https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Tankpack.jpg?v=1579875103",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+            }
+  }
+];
 /*    {
     tankId: 15,
     name: 'Diamond 2700HZB',
@@ -969,4 +1051,3 @@ export const tanks = [
   },
 */
 
-];

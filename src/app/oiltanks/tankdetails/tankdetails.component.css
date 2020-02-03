@@ -1,5 +1,5 @@
 .object-fit_contain { object-fit: contain }
-
+/*
 #content {
   float: left;
   background-color: #FFFFFF;
@@ -25,13 +25,13 @@
   width: 57%;
   background-color: #FFFFFF;
 }
-
+*/
 #image {
     float: left;
     margin: 0;
     background: #FFF;
     position: relative;
-    padding: 4px;
+/*    padding: 4px; */
     text-align: center;
 }
 
@@ -40,6 +40,15 @@
   width: 100%;
   height: auto;
   background-color: #FFFFFF;
+  clear: both;
+  background: #FFF url(/images/offer.gif) no-repeat top right;
+  border: 4px dashed green;
+}
+
+.promotext {
+  display: table-cell;
+  float: left;
+  width: 75%;
 }
 
 #desc {
@@ -49,6 +58,7 @@
   background-color: #FFFFFF;
 }
 
+/*
 #prodright {
   float: right;
   width: 40%;
@@ -56,27 +66,21 @@
   padding: 10px;
     background: #F3F3F3;
 }
+*/
+
 
 #addtobasket {
-  float: left;
   width: 100%;
   height: 400px;
   background-color: #FFFFFF;
-  margin: 0 0 10px;
+/*  margin: 0 0 10px;*/
 }
 
 
-
-#proddetails {
-  float: left;
-  width: 100%;
-  height: auto;
-  background-color: #FFFFFF;
-}
 
 #boxcontent {
   float: left;
-  width: 95%;
+  width: 100% -30px;
   height: auto;
   margin: 15px;
   background-color: #FFFFFF;
@@ -84,7 +88,7 @@
 
 #pricecontent {
   float: left;
-  width: 300px;
+ /* width: 300px;*/
   height: auto;
   margin: 0px 0px 10px 0px;
 }

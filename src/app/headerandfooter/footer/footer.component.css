@@ -12,8 +12,19 @@ body {
  position: relative;
 }
 
+footer {
+    background: linear-gradient(to right, #2B3864 0%, #1B75BB 50%, #26A9E0 100%);
+}
 
 
+
+mat-card {
+  margin: 20px 20px 20px 20px;
+  min-height: 145px;
+
+}
+
+/*
 footer {
      min-width: 768px;
    max-width: 980px;
@@ -23,8 +34,4 @@ footer {
   margin: auto;
   border: 1px;
 }
-
-mat-card {
-  width: 302px;
-  height: 182px;
-}
+*/

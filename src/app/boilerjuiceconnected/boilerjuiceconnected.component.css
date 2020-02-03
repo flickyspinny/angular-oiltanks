@@ -66,3 +66,7 @@
   margin: 15px;
   background-color: #FFFFFF;
 }
+
+mat-card {
+  margin: 10px;
+}
