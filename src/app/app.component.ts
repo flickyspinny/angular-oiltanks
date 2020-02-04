@@ -32,8 +32,8 @@ ngOnInit() {
         { name: 'keywords', content: 'Domestic Heating Oil Tank, BoilerJuice Connected, Bulb, oil tank installer, bunded tank, slimline tank, oil tanks, diesel tanks, kerosene tanks, deso tanks, harlequin tanks, titan tanks, carbery tanks, diamond tanks, envirostore tanks' },
         { name: 'robots', content: 'index, follow' },
         { name: 'author', content: 'SmartNow Ltd' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'date', content: '2020-02-03', scheme: 'YYYY-MM-DD' },
+        { name: 'viewport', content: 'width=device-width' },
+        { name: 'date', content: '2020-02-04', scheme: 'YYYY-MM-DD' },
         { charset: 'UTF-8' }
       ]);
 }
