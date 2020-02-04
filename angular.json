@@ -21,7 +21,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/.htaccess"
+              "src/.htaccess",
+              "robots.txt",
+              "sitemap.xml"
             ],
             "styles": [
 
