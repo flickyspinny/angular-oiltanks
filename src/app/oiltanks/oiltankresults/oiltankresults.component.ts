@@ -8,6 +8,8 @@ import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import  {PageEvent } from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { Title, Meta } from '@angular/platform-browser';
+import { Cloudinary  } from '@cloudinary/angular-5.x';
+
 
 
 //import TankService
@@ -74,7 +76,8 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
 
   constructor(
     private meta: Meta,
-    private titleService: Title){};
+    private titleService: Title,
+    private cloudinary: Cloudinary){};
 
   public ngOnInit() {
     this.filterChange();

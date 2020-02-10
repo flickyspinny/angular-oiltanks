@@ -357,6 +357,7 @@
         <td mat-cell 
             *matCellDef="let element"
             width=25%
+            
             a [routerLink]="['/domestic_heating_oil_tanks', element.tankId, element.slug]"> 
 <!--Image--            <picture>
               <source media="(min-width: 800px)" srcset="{{element.image_thumb}}">
@@ -364,7 +365,13 @@
               <img src="{{element.image_thumb}}" alt="{{element.imagealt}}">
             </picture>-->
 <!--          <img src="{{element.image_thumb}}" alt="{{element.imagealt}}"> -->
-          <img class="Sirv" data-src="{{element.image}}" alt="{{element.imagealt}}">
+<!--          <img class="Sirv" data-src="{{element.image}}" alt="{{element.imagealt}}"> -->
+        <cl-image     
+          dpr="auto"
+          responsive
+          width="auto"
+          crop="scale"
+          public-id="{{element.image}}"></cl-image>
         </td>
       </ng-container>
 
