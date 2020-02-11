@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { showBuyButton } from '../../assets/buybutton.js';
 import { LocationStrategy } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
+import { Cloudinary  } from '@cloudinary/angular-5.x';
 
 
 
@@ -30,7 +31,8 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
     private location: LocationStrategy,
     private router: Router,
     private meta: Meta,
-    private titleService: Title
+    private titleService: Title,
+    private cloudinary: Cloudinary
     ) 
     { 
       this.location.onPopState(() => {
@@ -44,11 +46,11 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
       this._tankId = +params['tankId'];
       });
 //Set the instance of the title variable (this.title) to the value in seo.title in tanks.ts
-    this.title = this.products[this._tankId-1].seo.title;
+    this.title = this.products[this._tankId-2].seo.title;
 //Use the titleService to set the Page Title
     this.titleService.setTitle(this.title);
-    this.meta.updateTag ({ name: 'description', content: this.products[this._tankId-1].seo.description});
-    this.meta.updateTag ({ name: 'keywords', content: this.products[this._tankId-1].seo.keywords });
+    this.meta.updateTag ({ name: 'description', content: this.products[this._tankId-2].seo.description});
+    this.meta.updateTag ({ name: 'keywords', content: this.products[this._tankId-2].seo.keywords });
 //     console.log("this _tankId", this._tankId);
 //     console.log("SEO Title", this.products[this._tankId-1].seo.title);
   }

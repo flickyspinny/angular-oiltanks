@@ -11,16 +11,16 @@
 <!--Row Two: Contains Image and tank details -->
 <div class="row" *ngFor="let p of (products | selectedTank: _tankId)">
   <!-- 1st Column: Contains image -->
-  <div class="col-md-8 col-sm-12de" >
+  <div class="col-md-8 col-sm-12" >
       <!-- Contains tank image-->
-    <div id="image" class="order-12" max-width=600px>
-        <cl-image     
-          dpr="auto"
-          responsive
-          width=auto"
-          crop="scale"
-          public-id="{{p.image}}"></cl-image>
-    </div>  
+        <cl-image    
+                      crop="limit"
+              dpr="auto"
+              responsive 
+              width="auto:50"
+          public-id="{{p.image}}">
+
+        </cl-image>
   </div>
 
   <!-- 2nd Column: Contains add basket -->
@@ -105,11 +105,21 @@
     <ng-template #caseTankKit>
       <div id="promo" class="order-1">
         <div id="boxcontent">
-          <img style="max-width:20%;
+ <!--         <img style="max-width:20%;
             max-height:100%;"
             class="Sirv" 
             data-src={{p.promo.image}}
-            alt={{p.promo.imagealt}}>
+            alt={{p.promo.imagealt}}>-->
+
+        <cl-image     
+          dpr="auto"
+          responsive
+          public-id="{{p.promo.image}}">
+            <cl-transformation width="140" crop="fit">
+             </cl-transformation>
+        </cl-image>
+
+
           <div class="promotext">
             <h3>{{p.promo.header}}</h3>
             <p>{{p.promo.text}}

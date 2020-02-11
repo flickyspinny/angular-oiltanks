@@ -57,7 +57,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 350ITE 350 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -121,7 +121,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 650ITE 650 litre low profile bunded heating oil tank. 10 yr guarantee."
           }     ,
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -183,7 +183,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1000ITE 1000 litre low profile bunded heating oil tank. 10 yr guarantee."
           } ,
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -245,7 +245,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1100ITE 1100 litre low profile bunded heating oil tank. 10 yr guarantee."
           } ,
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -307,7 +307,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1200ITE 1200 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -369,7 +369,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1225ITE 1225 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -431,7 +431,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1300ITE 1300 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -494,7 +494,7 @@ export const tanks = [
 
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -556,7 +556,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 1450ITE 1100 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -618,7 +618,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 2000ITE 2000 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
       promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -680,7 +680,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 2500ITE 2500 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -750,7 +750,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1000SSL 1000 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -813,7 +813,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1400SSL 1400 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
@@ -876,7 +876,7 @@ export const tanks = [
           description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1650HZB 1650 litre low profile bunded heating oil tank. 10 yr guarantee."
           },
     promo:   {include: true,
-              image: "https://ergavanu.sirv.com/Images/Promo/Tankpack.jpg",
+              image: "Accessories/Tankpack_jx9ow0.jpg",
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
