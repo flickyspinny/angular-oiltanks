@@ -16,6 +16,7 @@
     "@angular/platform-browser": "8.2.14",
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
+    "@cloudinary/angular-5.x": "^1.1.0",
     "@shopify/buy-button-js": "2.0.0",
     "@trademe/ng-defer-load": "3.1.0",
     "@types/google.analytics": "^0.0.40",
