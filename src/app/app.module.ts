@@ -15,7 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
-import * as  Cloudinary from 'cloudinary-core';
+import * as Cloudinary from 'cloudinary-core';
+
 
 
 

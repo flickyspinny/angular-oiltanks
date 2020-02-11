@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { showBuyButton } from '../../assets/buybutton.js';
 import { LocationStrategy } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
 
 
