@@ -21,6 +21,8 @@ import * as Cloudinary from 'cloudinary-core';
 
 
 
+
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
@@ -110,9 +112,9 @@ const config = {
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    FlexLayoutModule,
     CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'cloudinaryepic'}),
     MatSidenavModule,
-    FlexLayoutModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
       { path: 'domestic_heating_oil_tanks', component: OiltankresultsComponent },
