@@ -30,7 +30,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MaintabsComponent } from './maintabs/maintabs.component';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MatTableModule} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSortModule} from '@angular/material/sort';
 import { OilinsuranceComponent } from './oilinsurance/oilinsurance.component';
