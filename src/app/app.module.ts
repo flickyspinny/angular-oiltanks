@@ -6,7 +6,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { DeferLoadModule }from '@trademe/ng-defer-load';
 import { environment } from '../environments/environment';
 import {LayoutModule} from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -113,7 +112,6 @@ const config = {
     MatListModule,
     CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'cloudinaryepic'}),
     MatSidenavModule,
-    DeferLoadModule,
     FlexLayoutModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
