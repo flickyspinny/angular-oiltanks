@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { FooterComponent } from './headerandfooter/footer/footer.component';
 import { HeaderComponent } from './headerandfooter/header/header.component';
 import { MaintabsComponent } from './maintabs/maintabs.component';
+import { OiltankresultsComponent } from './oiltanks/oiltankresults/oiltankresults.component';
 
 
 declare let ga: any;

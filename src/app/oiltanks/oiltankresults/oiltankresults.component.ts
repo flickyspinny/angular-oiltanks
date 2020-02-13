@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 import { tanks } from '../../../tanks';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatExpansionModule } from '@angular/material/expansion';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
@@ -9,6 +9,8 @@ import  {PageEvent } from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { Title, Meta } from '@angular/platform-browser';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatCardModule} from '@angular/material/card';
 
 
 
