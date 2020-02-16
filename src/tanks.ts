@@ -72,7 +72,7 @@ export const tanks = [
     price: 1050.00,
     old: false,
     guarantee: 10,
-    image: 'Harlequin/Harlequin_650_dglina.webp',
+    image: 'Harlequin/Harlequin_650_dglina.jpg',
     imagealt: 'Harlequin 650ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
