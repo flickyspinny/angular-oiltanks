@@ -11,6 +11,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 
 
@@ -64,6 +65,7 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
             };
 
   Product = tanks; 
+  imagePath;
 
   Brands = [
       {name: 'Deso', filterName: 'brandDeso'},
@@ -80,7 +82,8 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
   constructor(
     private meta: Meta,
     private titleService: Title,
-    private cloudinary: Cloudinary){};
+    private cloudinary: Cloudinary,
+    public breakpointObserver: BreakpointObserver){};
 
   public ngOnInit() {
     this.filterChange();

@@ -11,8 +11,10 @@
 <!--Row Two: Contains Image and tank details -->
 <div class="row" *ngFor="let p of (products | selectedTank: _tankId)">
   <!-- 1st Column: Contains image -->
-  <div class="col-md-8 col-sm-12" >
-      <!-- Contains tank image-->
+  <div class="col-md-8 col-sm-12" 
+      style="background-color:white"
+      align="center">
+      <!-- Contains tank image
         <cl-image    
                       crop="limit"
               dpr="auto"
@@ -20,6 +22,13 @@
               width="auto:50"
           public-id="{{p.image}}">
 
+        </cl-image>-->
+        <cl-image  public-id="{{p.image}}">
+           <cl-transformation 
+            [attr.width]="this.variablemainwidth" 
+            crop="limit"
+            fetch-format="auto">
+           </cl-transformation>
         </cl-image>
   </div>
 
@@ -104,27 +113,30 @@
     <!-- if a tank available then render this template to show current promotions -->
     <ng-template #caseTankKit>
       <div id="promo" class="order-1">
-        <div id="boxcontent">
- <!--         <img style="max-width:20%;
+         <!--       <div id="boxcontent">
+         <img style="max-width:20%;
             max-height:100%;"
             class="Sirv" 
             data-src={{p.promo.image}}
             alt={{p.promo.imagealt}}>-->
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12">
+              <h3>{{p.promo.header}}</h3>
+              <p>{{p.promo.text}}
+              </p>
+            </div>
 
-        <cl-image     
-          dpr="auto"
-          responsive
-          public-id="{{p.promo.image}}">
-            <cl-transformation width="140" crop="fit">
-             </cl-transformation>
-        </cl-image>
-
-
-          <div class="promotext">
-            <h3>{{p.promo.header}}</h3>
-            <p>{{p.promo.text}}
-            </p>
-          </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div>
+              <cl-image  public-id="{{p.promo.image}}">
+                <cl-transformation 
+                  [attr.width]="this.variablepromowidth" 
+                  crop="scale"
+                  fetch-format="auto">
+                </cl-transformation>
+              </cl-image>
+            </div>
+          </div>  
         </div>
       </div>
     </ng-template>

@@ -43,12 +43,12 @@
   clear: both;
   background: #FFF url(/images/offer.gif) no-repeat top right;
   border: 4px dashed green;
+  padding: 15px;
 }
 
-.promotext {
+#promotext {
   display: table-cell;
-  float: left;
-  width: 100%;
+  background: #DAF;
 }
 
 #desc {

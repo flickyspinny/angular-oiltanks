@@ -8,6 +8,7 @@ import { LocationStrategy } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 
 
@@ -25,6 +26,10 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   hello1: any;
   booleanOldTank;
   title;
+  variablemainwidth;
+  variablepromowidth;
+  breakpoint;
+  cloudinaryOptions;
 
 
   constructor(
@@ -33,7 +38,8 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
     private router: Router,
     private meta: Meta,
     private titleService: Title,
-    private cloudinary: Cloudinary
+    private cloudinary: Cloudinary,
+    public breakpointObserver: BreakpointObserver
     ) 
     { 
       this.location.onPopState(() => {
@@ -52,8 +58,40 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
     this.titleService.setTitle(this.title);
     this.meta.updateTag ({ name: 'description', content: this.products[this._tankId-2].seo.description});
     this.meta.updateTag ({ name: 'keywords', content: this.products[this._tankId-2].seo.keywords });
-//     console.log("this _tankId", this._tankId);
-//     console.log("SEO Title", this.products[this._tankId-1].seo.title);
+// Breakpoint Observer for Cloudinary images
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,
+      Breakpoints.Medium,
+      Breakpoints.Large,
+      Breakpoints.XLarge
+    ]).subscribe(result => {
+      if (result.breakpoints[Breakpoints.XSmall]) {
+        this.variablemainwidth = "290"; 
+        this.variablepromowidth = "290"; 
+        console.log(this.variablemainwidth);
+      }
+      if (result.breakpoints[Breakpoints.Small]) {
+        this.variablemainwidth = "450"; 
+        this.variablepromowidth = "120"; 
+        console.log(this.variablemainwidth);        
+      }
+      if (result.breakpoints[Breakpoints.Medium]) {
+        this.variablemainwidth = "450"; 
+        this.variablepromowidth = "120"; 
+        console.log(this.variablemainwidth);
+      }
+      if (result.breakpoints[Breakpoints.Large]) {
+        this.variablemainwidth = "600"; 
+        this.variablepromowidth = "150"; 
+        console.log(this.variablemainwidth);
+      }
+      if (result.breakpoints[Breakpoints.XLarge]) {
+       this.variablemainwidth = "600"; 
+        this.variablepromowidth = "150"; 
+        console.log(this.variablemainwidth);
+      }
+    });    
   }
   
   ngAfterViewInit() {

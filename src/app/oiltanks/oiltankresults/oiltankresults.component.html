@@ -366,16 +366,12 @@
             </picture>-->
 <!--          <img src="{{element.image_thumb}}" alt="{{element.imagealt}}"> -->
 <!--          <img class="Sirv" data-src="{{element.image}}" alt="{{element.imagealt}}"> -->
-        <cl-image     
-          dpr="auto"
-          responsive
-          width="auto"
-          crop="scale"
-          public-id="{{element.image}}">
-          
-          </cl-image>
-        </td>
-      </ng-container>
+        <cl-image  public-id="{{element.image}}">
+          <cl-transformation width="150" crop="scale">
+           </cl-transformation>
+        </cl-image>
+      </td>
+    </ng-container>
 
       <!-- Name Column -->
       <ng-container matColumnDef="name">
