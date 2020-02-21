@@ -3,7 +3,7 @@ import { ActivatedRoute, RouterModule, Router} from '@angular/router';
 import { tanks } from '../../../tanks';
 import { SelectedtankPipe } from '../../pipes/selectedtank.pipe';
 import {MatButtonModule} from '@angular/material/button';
-import { showBuyButton } from '../../assets/buybutton.ts';
+import { showBuyButton } from '../../assets/buybutton';
 import { LocationStrategy } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
