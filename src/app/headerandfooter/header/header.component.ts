@@ -1,5 +1,6 @@
 import { Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { Cloudinary  } from '@cloudinary/angular-5.x';
 
 @Component({
   selector: 'app-header',
@@ -24,7 +25,7 @@ export class HeaderComponent  {
 
   private _mobileQueryListener: () => void;
 
-  constructor() {
+  constructor(private cloudinary: Cloudinary) {
   }
 
 

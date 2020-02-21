@@ -366,7 +366,8 @@
             </picture>-->
 <!--          <img src="{{element.image_thumb}}" alt="{{element.imagealt}}"> -->
 <!--          <img class="Sirv" data-src="{{element.image}}" alt="{{element.imagealt}}"> -->
-        <cl-image  public-id="{{element.image}}">
+        <cl-image  public-id="{{element.image}}"
+        [attr.alt]="element.imagealt">
           <cl-transformation width="150" crop="scale">
            </cl-transformation>
         </cl-image>

@@ -23,7 +23,9 @@
           public-id="{{p.image}}">
 
         </cl-image>-->
-        <cl-image  public-id="{{p.image}}">
+        <cl-image 
+          public-id="{{p.image}}"
+          [attr.alt]="p.imagealt">
            <cl-transformation 
             [attr.width]="this.variablemainwidth" 
             crop="limit"
@@ -128,7 +130,9 @@
 
             <div class="col-lg-3 col-md-4 col-sm-12">
               <div>
-              <cl-image  public-id="{{p.promo.image}}">
+              <cl-image  
+                public-id="{{p.promo.image}}"
+                [attr.alt]="p.promo.imagealt">
                 <cl-transformation 
                   [attr.width]="this.variablepromowidth" 
                   crop="scale"
