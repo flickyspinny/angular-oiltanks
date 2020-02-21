@@ -13,8 +13,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { CloudinaryModule, CloudinaryConfiguration, provideCloudinary } from '@cloudinary/angular-5.x';
-import * as Cloudinary from 'cloudinary-core';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
 
 
 
@@ -53,7 +53,7 @@ import { FAQComponent } from './general/faq/faq.component';
 import { PrivacyComponent } from './general/privacy/privacy.component';
 import { TermsComponent } from './general/terms/terms.component';
 import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
-import cloudinaryConfiguration from './config';
+
 
 
 const config = {
@@ -114,7 +114,7 @@ const config = {
     MatIconModule,
     MatListModule,
     FlexLayoutModule,
-    CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'cloudinaryepic'}),
+    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'cloudinaryepic'} as CloudinaryConfiguration),
     MatSidenavModule,
     RouterModule.forRoot([
 //      { path: '', component: OiltanksComponent },
@@ -137,8 +137,7 @@ const config = {
   ],
   providers: [
     HttpClientModule,
-    TankService,
-    provideCloudinary(require('cloudinary-core'), cloudinaryConfiguration as CloudinaryConfiguration)
+    TankService
   ],
   bootstrap: [AppComponent]
 })
