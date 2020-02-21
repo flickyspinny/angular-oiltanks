@@ -10,8 +10,6 @@ import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
-declare const TEST: any;
-
 @Component({
   selector: 'app-tankdetails',
   templateUrl: './tankdetails.component.html',
