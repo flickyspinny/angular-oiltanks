@@ -1,3 +1,5 @@
+//export const _ = 0 added so js has something concrete to export and stops the unexpected token export error showing up on console.  Total hack.
+export const _ = 0;
 export function showBuyButton(shopify_id) {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
   if (window.ShopifyBuy) {
