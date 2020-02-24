@@ -28,6 +28,7 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   variablepromowidth;
   breakpoint;
   cloudinaryOptions;
+  schema;
 
 
   constructor(
@@ -89,11 +90,58 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
         this.variablepromowidth = "150"; 
         console.log(this.variablemainwidth);
       }
-    });    
+    });  
+    this.schema = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "description": this.products[this._tankId-2].seo.description,
+      "name": this.products[this._tankId-2].name,
+      "image": [
+        this.products[this._tankId-2].strucdata.image1,
+        this.products[this._tankId-2].strucdata.image2,
+        this.products[this._tankId-2].strucdata.image3
+       ],
+      "brand": {
+        "@type": "Thing",
+        "name": this.products[this._tankId-2].brand
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": this.products[this._tankId-2].strucdata.url,
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "price": this.products[this._tankId-2].price,
+        "priceCurrency": "GBP",
+        "priceValidUntil": "2030-11-05",
+        "seller": {
+          "@type": "Organization",
+          "name": "SmartNow Ltd"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": this.products[this._tankId-2].strucdata.ratingvalue,
+        "reviewCount": this.products[this._tankId-2].strucdata.reviewcount
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "David Pearce"
+        }
+      }
+    };  
   }
+
+  
   
   ngAfterViewInit() {
-    showBuyButton(this.products[this._tankId-1].shopify_id);
+    showBuyButton(this.products[this._tankId-2].shopify_id);
   }
 
 

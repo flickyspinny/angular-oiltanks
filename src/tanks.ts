@@ -1,68 +1,5 @@
 export const tanks = [
 //Start of Harlequin Tanks 
-/*  {
-    tankId: 1,
-    name: 'Harlequin 350ITE',
-    slug: 'Harlequin-350ITE-bunded-heating-oil-tank',
-    brand: 'Harlequin',
-    price: 702,
-    old: false,
-    guarantee: 10,
-    image: 'https://ergavanu.sirv.com/Images/Harlequin%20Tanks/Harlequin%20350.jpg',
-    imagealt: 'Harlequin 350ITE bunded domestic heating oil tank',
-    description: 'A small bunded tank',
-    shopifyFlag: true,
-    shopify_id: '4394263314498',
-    physicalprops:   {volume: 350,
-                  brimfulVolume: '358',
-                  height: 116,
-                  length: 98,
-                  width: 98,
-                  weight: 45,
-                  shapeType: '',
-                  internalShape: 'vertical cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
-                  fuelType: 'Heating Oil, Diesel, Gas Oil '
-                },
-    descriptionmain: {description: 'A small bunded tank',
-                      topfill: '', 
-                      lid: '16" lockable lid', 
-                      bottomfill: 'Bottom outlet with 1" BSP (F) thread',
-                      inspectioncap: '4" lockable inspection cap',
-                      gauge: '',
-                      monitorpoint: '32mm hole with cover for an electronic oil monitor',
-                      misc1: 'Installation:  cement base 158 x 158 cm',
-                      misc2: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
-                      misc3: '',
-                      misc4: '',
-                      misc5: '',
-                      misc6: ''
-                      },
-    delivery: {standardcost: 'free',
-               standardtype: 'tail lift',
-               standardtime: '5 business days',
-               standardconditions: '',
-               option1cost: '',
-               option1type: '',
-               option1time: '',
-               option1conditions: '',
-               option2cost: '',
-               option2type: '',
-               option2time: ''
-               option2conditions: ''
-              },
-    seo:  {title: 'Harlequin 350 litre ITE Bunded Oil Tank | SmartNow',
-          keywords: 'oil tank, bunded, harlequin, 350, CE-mark, 24 hour deliver, 48 hour delivery',
-          description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Harlequin 350ITE 350 litre low profile bunded heating oil tank. 10 yr guarantee."
-          },
-    promo:   {include: true,
-              image: "Accessories/Tankpack_jx9ow0.jpg",
-              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
-              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
-              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
-  },*/
 
   {
     tankId: 2,
@@ -76,7 +13,7 @@ export const tanks = [
     imagealt: 'Harlequin 650ITE bunded domestic heating oil tank',
     description: 'A small bunded tank',
     shopifyFlag: true,
-    shopify_id: '4424748433474',
+    shopify_id: '4424748433474',  
     physicalprops:   {volume: 650,
                   brimfulVolume: '673',
                   height: 133,
@@ -125,7 +62,16 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }       
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_444,q_100,w_789/v1581108403/Harlequin/Harlequin_650_dglina.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_444,q_100,w_592/v1581108403/Harlequin/Harlequin_650_dglina.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_444,q_100,w_444/v1581108403/Harlequin/Harlequin_650_dglina.jpg",
+      ratingvalue: 4.6,
+      reviewcount: 6,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/650ite"
+    }
+
   },
 
   {
@@ -187,7 +133,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_444/v1581108403/Harlequin/Harlequin_1000_cweu0t.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_592/v1581108403/Harlequin/Harlequin_1000_cweu0t.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_789/v1581108403/Harlequin/Harlequin_1000_cweu0t.jpg",
+      ratingvalue: 4.8,
+      reviewcount: 12,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1000ite"
+    }
   },
 
   {
@@ -249,7 +203,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_444/v1581108403/Harlequin/Harlequin_1100_bqgyye.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_592/v1581108403/Harlequin/Harlequin_1100_bqgyye.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_789/v1581108403/Harlequin/Harlequin_1100_bqgyye.jpg",
+      ratingvalue: 4.7,
+      reviewcount: 22,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1100ite"
+    }
   },
 
     {
@@ -311,7 +273,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_600,q_100,w_600/v1581108403/Harlequin/Harlequin_1200_oumrwt.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_600,q_100,w_800/v1581108403/Harlequin/Harlequin_1200_oumrwt.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_1200_oumrwt.jpg",
+      ratingvalue: 4.8,
+      reviewcount: 19,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1200ite"
+    }
   },
 
   {
@@ -373,7 +343,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_640,w_640/v1581108403/Harlequin/Harlequin_1225_lnkw6m.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108403/Harlequin/Harlequin_1225_lnkw6m.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_scale,q_100,w_853/v1581108403/Harlequin/Harlequin_1225_lnkw6m.jpg",
+      ratingvalue: 4.7,
+      reviewcount: 32,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1225ite"
+    }
   },
 
     {
@@ -435,7 +413,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108404/Harlequin/Harlequin_1300_qbllgi.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_800/v1581108404/Harlequin/Harlequin_1300_qbllgi.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_1300_qbllgi.jpg",
+      ratingvalue: 4.6,
+      reviewcount: 19,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1300ite"
+    }
   },
 
     {
@@ -498,7 +484,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108403/Harlequin/Harlequin_1400_q3cfle.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_800/v1581108403/Harlequin/Harlequin_1400_q3cfle.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_1400_q3cfle.jpg",
+      ratingvalue: 4.3,
+      reviewcount: 11,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1400ite"
+    }
   },
 
     {
@@ -560,7 +554,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108404/Harlequin/Harlequin_1450_arp4qz.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_800/v1581108404/Harlequin/Harlequin_1450_arp4qz.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_1450_arp4qz.jpg",
+      ratingvalue: 4.5,
+      reviewcount: 13,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1450ite"
+    }
   },
 
     {
@@ -622,7 +624,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        } 
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108404/Harlequin/Harlequin_2000_hazmyp.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_800/v1581108404/Harlequin/Harlequin_2000_hazmyp.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_2000_hazmyp.jpg",
+      ratingvalue: 4.8,
+      reviewcount: 32,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2000ite"
+    }
   },
 
     {
@@ -684,7 +694,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/q_100/v1581108403/Harlequin/Harlequin_2500_htzps5.jpg",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_800/v1581108403/Harlequin/Harlequin_2500_htzps5.jpg",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_2500_htzps5.jpg",
+      ratingvalue: 4.7,
+      reviewcount: 13,
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2500ite"
+    }
   },
 //End of Harlequin Tanks 
 
@@ -754,7 +772,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-        }
+        },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_380,q_100,w_380/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,q_100,w_492/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_369,q_100,w_656/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
+      ratingvalue: 4.9,
+      reviewcount: 62,
+      url: "https://harlequinplastics.co.uk"
+    }
   },
 
   {
@@ -817,7 +843,15 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-            }
+            },
+    strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_381,q_100,w_381/v1581353009/Diamond/Diamond_1400SSL_nzem1a.png",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_493/v1581353009/Diamond/Diamond_1400SSL_nzem1a.png",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1400SSL_nzem1a.png",
+      ratingvalue: 4.9,
+      reviewcount: 62,
+      url: "https://harlequinplastics.co.uk/new-product-1400-ssl/"
+    }
   },
 
   {
@@ -880,163 +914,14 @@ export const tanks = [
               imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
               header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
               text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-            }
+            },
+      strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_380,q_100,w_380/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_493/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
+      ratingvalue: 4.5,
+      reviewcount: 13,
+      url: "https://harlequinplastics.co.uk"
+    }
   }
 ];
-/*    {
-    tankId: 15,
-    name: 'Diamond 2700HZB',
-    slug: 'Diamond-2700HZB-bunded-heating-oil-tank',
-    brand: 'Diamond',
-    price: 1498.80,
-    old: false,
-    guarantee: 10,
-    image: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_2700HZB.png?v=1578328148',  
-    image_thumb: 'https://cdn.shopify.com/s/files/1/0258/2154/4514/products/Diamond_2700HZB.png?v=1578328148',  
-    imagealt: 'Diamond 2700HZB bunded domestic heating oil tank',
-    description: 'A high-quality bunded tank',
-    shopifyFlag: true,
-    shopify_id: '4424642756674',
-    physicalprops:   {volume: 2700,
-                  brimfulVolume: 2796,
-                  height: 165,
-                  length: 239.5,
-                  width: 172,
-                  internalHeight: 145,
-                  weight: 190,
-                  shapeType: '',
-                  internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
-                  fuelType: 'Heating Oil, Diesel, Gas Oil '
-                },
-    descriptionmain: {description: '',
-                      topfill: '', 
-                      lid: 'Heavy duty lockable manhole access', 
-                      bottomfill: 'Bottom outlet with 1" BSP (F) thread',
-                      inspectioncap: '4" lockable inspection cap',
-                      gauge: 'Contents dipstick',
-                      monitorpoint: '32mm mounting point (with cover) for fitting an electronic oil monitor',
-                      misc1: 'Moulded in handles for ease of lifting',
-                      misc2: 'Non-Corrosive, made from MDPE',
-                      misc3: '10 year gaurantee (requires registration)',
-                      misc4: 'Meets regulations - independently tested and approved to EN13341',
-                      misc5: 'Made by Harlequin Tanks',
-                      misc6: ''
-                      },
-    delivery: {standardcost: 'free',
-               standardtype: 'tail lift',
-               standardtime: '2 day (48 hours)',
-               conditions: '24 / 48 hour delivery if order placed before 11am, excludes AB, BT, DD, EH, FK, G, HS, IV, KA, KW, KY, ML, PA & PH postcodes.  Delivery to curbside.  Days quoted are business days',
-               option1cost: '£25',
-               option1type: 'tail lift',
-               option1time: 'Next day (24 hours)',
-               option2cost: '',
-               option2type: '',
-               option2time: '',
-              },
-    seo:  {title: '2700 Litre Super Slimline Bunded Heating Oil Tank - Diamond 2700HZB | SmartNow Ltd | SmartNowUK.com'
-
-          }
-  },
-  */
-// End Diamond Tanks
-
-/*
-  {
-    tankId: 2,
-    name: 'Titan Ecosafe ESB2500 Slimline',
-    brand: 'Titan',    
-    old: false,
-    price: 1299,
-    guarantee: 10,
-    image: 'https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/Deso_H1235BT.jpg?alt=media&token=0ad82400-2b9d-4537-9cc8-4ab9ab9733d2',
-    image_thumb: 'https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/Deso_H1235BT_thumb.png?alt=media&token=2fdde85e-480d-4cdd-bbe4-81201d9c2715',
-    shopifyFlag: true,
-    shopify: 'N/A',
-    shopify_id: '4408929124418',
-    physicalprops:   {volume: 2500,
-                      height: 130,
-                      length: 150,
-                      width: 1,
-                      internalHeight: 109,
-                      weight: 200,
-                      shapeType: 'slimline',
-                      internalShape: 'vertical cylinder',
-                      material: 'plastic',
-                      bunded: 'bunded', 
-                      fuelType: 'Heating Oil, Diesel, Gas Oil '
-                    },
-    descriptionmain: {description: 'A large bunded tank',
-                      topfill: 'Top outlet - Optional (special order - please contact us)', 
-                      lid: '16" lockable lid', 
-                      bottomfill: 'Bottom outlet with 1" BSP (F) thread',
-                      inspectioncap: '4" lockable inspection cap',
-                      gauge: '',
-                      monitorpoint: '32mm hole with cover suitable for fitting an electronic oil monitor',
-                      misc1: 'Inner tank vent',
-                      misc2: 'Moulded in handles for ease of lifting',
-                      misc3: '',
-                      misc4: '',
-                      misc5: '',
-                      misc6: ''
-                      },
-    delivery: {standardcost: 'free',
-            standardtype: 'tail lift',
-            standardtime: '48 Hour',
-            standardconditions: 'If ordered before 10:30am (Postcode exclusions apply to AB, BT, DD, DG, EH, FK, G, IV, KA, KW, KY, ML, PA, PH, TD & TR)',
-            option1cost: '£25',
-            option1type: 'tail lift',
-            option1time: '24 Hour',
-            option1conditions: 'If ordered before 10:30am (Postcode exclusions apply to AB, BT, DD, DG, EH, FK, G, IV, KA, KW, KY, ML, PA, PH, TD & TR)',
-            option2cost: '',
-            option2type: '',
-            option2time: '',
-            option2conditions: ''
-          }
-  },
-
-
-  {
-    tankId: 3,
-    name: 'Deso H1235BT',
-    brand: 'Deso',
-    old: true,
-    price: 799,
-    guarantee: 10,
-    image: 'https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/Deso_H1235BT.jpg?alt=media&token=0ad82400-2b9d-4537-9cc8-4ab9ab9733d2',
-    image_thumb: 'https://firebasestorage.googleapis.com/v0/b/fir-demo-11999.appspot.com/o/Deso_H1235BT_thumb.png?alt=media&token=2fdde85e-480d-4cdd-bbe4-81201d9c2715',
-    shopifyFlag: false,
-    shopify: '',
-    shopify_id: '',
-    physicalprops:   {volume: 1235,
-              height: 100,
-              length: 120,
-              width: 150,
-              internalHeight: 89,
-              weight: 350,
-              shapeType: 'low profile',
-              internalShape: 'horizontal cylinder',
-              material: 'plastic',
-              bunded: 'bunded', 
-              fuelType: 'Heating Oil, Diesel, Gas Oil '
-            },
-    descriptionmain: {
-                  description: 'A low-profile single-skinned tank',
-                  topfill: 'Top outlet - Optional (special order - please contact us)', 
-                  lid: '16" lockable lid', 
-                  bottomfill: 'Bottom outlet with 1" BSP (F) thread',
-                  inspectioncap: '4" lockable inspection cap',
-                  gauge: '',
-                  monitorpoint: '32mm hole with cover suitable for fitting an electronic oil monitor',
-                  misc1: 'Inner tank vent',
-                  misc2: 'Moulded in handles for ease of lifting',
-                  misc3: '',
-                  misc4: '',
-                  misc5: '',
-                  misc6: ''
-                  }
-
-  },
-*/
-
