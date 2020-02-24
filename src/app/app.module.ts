@@ -15,6 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
 import { Cloudinary } from 'cloudinary-core';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 
 
@@ -96,6 +97,7 @@ const config = {
   imports: [
     LayoutModule,
     BrowserModule,
+    NgxJsonLdModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
