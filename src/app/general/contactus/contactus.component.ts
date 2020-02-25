@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 
 

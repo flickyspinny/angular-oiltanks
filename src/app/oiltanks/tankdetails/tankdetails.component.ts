@@ -9,6 +9,7 @@ import { showBuyButton } from './../../assets/buybutton.js';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import { Cloudinary  } from '@cloudinary/angular-5.x';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 @Component({
   selector: 'app-tankdetails',
