@@ -108,10 +108,10 @@ this.meta.updateTag(
        || ( x.physicalprops.volume >= 1950 && x.physicalprops.volume <=2550 && this.filter.volume2000to2500)
        || ( x.physicalprops.volume >= 2450 && this.filter.volume2500orMore)))
        &&
-       ((x.physicalprops.shapeType === 'low profile' && this.filter.shapeLowProfile) ||
+       ((x.physicalprops.shapeType === 'Low profile' && this.filter.shapeLowProfile) ||
        (this.filter.shapeLowProfile==false))
        &&
-       ((x.physicalprops.shapeType === 'slimline' && this.filter.shapeSlimline) ||
+       ((x.physicalprops.shapeType === 'Slimline' && this.filter.shapeSlimline) ||
        (this.filter.shapeSlimline==false))
        &&
        (x.physicalprops.length <=  this.filter.lengthMax) 
@@ -124,8 +124,8 @@ this.meta.updateTag(
        (x.physicalprops.internalShape === 'horizontal cylinder' && this.filter.internalShapeHorC) ||
        (x.physicalprops.internalShape === 'vertical cylinder' && this.filter.internalShapeVertC)) 
        &&
-       ((x.physicalprops.material === 'plastic' && this.filter.materialPlastic) ||
-       (x.physicalprops.material === 'steel' && this.filter.materialSteel)) 
+       ((x.physicalprops.material === 'Plastic' && this.filter.materialPlastic) ||
+       (x.physicalprops.material === 'Steel' && this.filter.materialSteel)) 
        &&
        ((x.brand === 'Deso' && this.filter.brandDeso) ||
        (x.brand === 'Harlequin' && this.filter.brandHarlequin) ||

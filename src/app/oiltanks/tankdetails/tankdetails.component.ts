@@ -96,6 +96,7 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
       "@type": "Product",
       "description": this.products[this._tankId-2].seo.description,
       "name": this.products[this._tankId-2].name,
+      "sku": this.products[this._tankId-2].strucdata.sku,
       "image": [
         this.products[this._tankId-2].strucdata.image1,
         this.products[this._tankId-2].strucdata.image2,
@@ -134,7 +135,49 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
           "@type": "Person",
           "name": "David Pearce"
         }
-      }
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Guarantee",
+          "value": this.products[this._tankId-2].guarantee + " Years"
+        },
+        {
+        "@type": "PropertyValue",
+          "name": "Delivery",
+          "value": "FREE - " + this.products[this._tankId-2].delivery.standardtime
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Volume",
+          "value": this.products[this._tankId-2].physicalprops.volume + " Litres"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Includes",
+          "value": this.products[this._tankId-2].promo.header
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Fuel Type",
+          "value": this.products[this._tankId-2].physicalprops.fuelType
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Tank Type",
+          "value": this.products[this._tankId-2].physicalprops.bunded
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Shape Type",
+          "value": this.products[this._tankId-2].physicalprops.shapeType
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Material",
+          "value": this.products[this._tankId-2].physicalprops.material
+        }
+      ]
     };  
   }
 

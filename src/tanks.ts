@@ -20,10 +20,10 @@ export const tanks = [
                   length: 171.5,
                   width: 67,
                   weight: 116,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil'
                 },
     descriptionmain: {description: 'A small bunded tank',
@@ -69,7 +69,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_444,q_100,w_444/v1581108403/Harlequin/Harlequin_650_dglina.jpg",
       ratingvalue: 4.6,
       reviewcount: 6,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/650ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/650ite",
+      sku: "650ITE"
     }
 
   },
@@ -93,10 +94,10 @@ export const tanks = [
                   length: 215,
                   width: 69,
                   weight: 132,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A small bunded tank',
@@ -140,7 +141,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_789/v1581108403/Harlequin/Harlequin_1000_cweu0t.jpg",
       ratingvalue: 4.8,
       reviewcount: 12,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1000ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1000ite",
+      sku: "1000ITE"
     }
   },
 
@@ -163,10 +165,10 @@ export const tanks = [
                   length: 188,
                   width: 89,
                   weight: 132,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A small bunded tank',
@@ -210,7 +212,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_444,q_100,w_789/v1581108403/Harlequin/Harlequin_1100_bqgyye.jpg",
       ratingvalue: 4.7,
       reviewcount: 22,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1100ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1100ite",
+      sku: "1100ITE"
     }
   },
 
@@ -233,10 +236,10 @@ export const tanks = [
                   length: 190,
                   width: 160,
                   weight: 130,
-                  shapeType: 'low profile',
+                  shapeType: 'Low profile',
                   internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A small bunded tank',
@@ -280,7 +283,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,g_center,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_1200_oumrwt.jpg",
       ratingvalue: 4.8,
       reviewcount: 19,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1200ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1200ite",
+      sku: "1200ITE"
     }
   },
 
@@ -303,10 +307,10 @@ export const tanks = [
                   length: 211,
                   width: 84,
                   weight: 150,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -350,7 +354,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_scale,q_100,w_853/v1581108403/Harlequin/Harlequin_1225_lnkw6m.jpg",
       ratingvalue: 4.7,
       reviewcount: 32,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1225ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1225ite",
+      sku: "1225ITE"
     }
   },
 
@@ -375,8 +380,8 @@ export const tanks = [
                   weight: 168,
                   shapeType: '',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -420,7 +425,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_1300_qbllgi.jpg",
       ratingvalue: 4.6,
       reviewcount: 19,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1300ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1300ite",
+      sku: "1300ITE"
     }
   },
 
@@ -445,8 +451,8 @@ export const tanks = [
                   weight: 135,
                   shapeType: '',
                   internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -491,7 +497,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_1400_q3cfle.jpg",
       ratingvalue: 4.3,
       reviewcount: 11,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1400ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1400ite",
+      sku: "1400ITE"
     }
   },
 
@@ -516,8 +523,8 @@ export const tanks = [
                   weight: 112,
                   shapeType: '',
                   internalShape: 'vertical cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -561,7 +568,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_1450_arp4qz.jpg",
       ratingvalue: 4.5,
       reviewcount: 13,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1450ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/1450ite",
+      sku: "1450ITE"
     }
   },
 
@@ -586,8 +594,8 @@ export const tanks = [
                   weight: 180,
                   shapeType: '',
                   internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -631,7 +639,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108404/Harlequin/Harlequin_2000_hazmyp.jpg",
       ratingvalue: 4.8,
       reviewcount: 32,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2000ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2000ite",
+      sku: "2000ITE"
     }
   },
 
@@ -656,8 +665,8 @@ export const tanks = [
                   weight: 210,
                   shapeType: '',
                   internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -701,7 +710,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_600,q_100,w_1067/v1581108403/Harlequin/Harlequin_2500_htzps5.jpg",
       ratingvalue: 4.7,
       reviewcount: 13,
-      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2500ite"
+      url: "https://harlequinplastics.co.uk/products/fuel-storage-tanks/bunded-oil-tanks/ite-oil-tanks/2500ite",
+      sku: "2500ITE"
     }
   },
 //End of Harlequin Tanks 
@@ -732,10 +742,10 @@ export const tanks = [
                   width: 64,
                   internalHeight: 126,
                   weight: 125,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -779,7 +789,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_369,q_100,w_656/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
       ratingvalue: 4.9,
       reviewcount: 62,
-      url: "https://harlequinplastics.co.uk"
+      url: "https://harlequinplastics.co.uk",
+      sku: "1000SSL"
     }
   },
 
@@ -803,10 +814,10 @@ export const tanks = [
                   width: 64,
                   internalHeight: 146,
                   weight: 200,
-                  shapeType: 'slimline',
+                  shapeType: 'Slimline',
                   internalShape: 'cuboid',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: 'A slimline bunded tank',
@@ -850,7 +861,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1400SSL_nzem1a.png",
       ratingvalue: 4.9,
       reviewcount: 62,
-      url: "https://harlequinplastics.co.uk/new-product-1400-ssl/"
+      url: "https://harlequinplastics.co.uk/new-product-1400-ssl/",
+      sku: "1400SSL"
     }
   },
 
@@ -876,8 +888,8 @@ export const tanks = [
                   weight: 150,
                   shapeType: '',
                   internalShape: 'horizontal cylinder',
-                  material: 'plastic',
-                  bunded: 'bunded', 
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
                   fuelType: 'Heating Oil, Diesel, Gas Oil '
                 },
     descriptionmain: {description: '',
@@ -921,7 +933,8 @@ export const tanks = [
       image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
       ratingvalue: 4.5,
       reviewcount: 13,
-      url: "https://harlequinplastics.co.uk"
+      url: "https://harlequinplastics.co.uk",
+      sku: "1650HZB"
     }
   }
 ];
