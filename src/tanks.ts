@@ -1,6 +1,85 @@
 export const tanks = [
 //Start of Harlequin Tanks 
 
+
+  {
+    tankId: 14,
+    name: 'Diamond 1650HZB',
+    slug: 'Diamond-1650HZB-bunded-heating-oil-tank',
+    brand: 'Diamond',
+    price: 1282.80,
+    old: false,
+    guarantee: 10,
+    image: 'Diamond/Diamond_1650HSL_ze0jqk.png',  
+    imagealt: 'Diamond 1650HZB bunded domestic heating oil tank',
+    description: 'A high-quality bunded tank',
+    shopifyFlag: true,
+    shopify_id: '4424630173762',
+    physicalprops:   {volume: 1650,
+                  brimfulVolume: 1662,
+                  height: 143,
+                  length: 201,
+                  width: 135,
+                  internalHeight: 123,
+                  weight: 150,
+                  shapeType: '',
+                  internalShape: 'horizontal cylinder',
+                  material: 'Plastic',
+                  bunded: 'Bunded', 
+                  fuelType: 'Heating Oil, Diesel, Gas Oil '
+                },
+    descriptionmain: {description: '',
+                      topfill: '', 
+                      lid: 'Heavy duty lockable manhole access', 
+                      bottomfill: 'Bottom outlet with 1" BSP (F) thread',
+                      inspectioncap: '4" lockable inspection cap',
+                      gauge: 'Contents dipstick',
+                      monitorpoint: '32mm mounting point (with cover) for fitting an electronic oil monitor',
+                      misc1: 'Moulded in handles for ease of lifting',
+                      misc2: 'Non-Corrosive, made from MDPE',
+                      misc3: '10 year gaurantee (requires registration)',
+                      misc4: 'Meets regulations - independently tested and approved to EN13341',
+                      misc5: 'Made by Harlequin Tanks',
+                      misc6: ''
+                      },
+    delivery: {standardcost: 'free',
+               standardtype: 'tail lift',
+               standardtime: '48 hours',
+               conditions: '24 / 48 hour delivery if order placed before 11am, excludes AB, BT, DD, EH, FK, G, HS, IV, KA, KW, KY, ML, PA & PH postcodes.  Delivery to curbside.',
+               option1cost: '£25',
+               option1type: 'tail lift',
+               option1time: '24 hours',
+               option2cost: '',
+               option2type: '',
+               option2time: '',
+              },
+    seo:  {title: 'Diamond 1650 Litre HZB Bunded Oil Tank | SmartNow',
+          keywords: 'oil tank, bunded, diamond, 1650, CE-mark, 24 hour deliver, 48 hour delivery',
+          description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1650HZB 1650 litre low profile bunded heating oil tank. 10 yr guarantee."
+          },
+    promo:   {include: true,
+              image: "Accessories/Tankpack_jx9ow0.jpg",
+              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
+              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
+              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
+            },
+      strucdata: {
+      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_380,q_100,w_380/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
+      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_493/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
+      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
+      ratingvalue: 4.5,
+      reviewcount: 13,
+      url: "https://harlequinplastics.co.uk",
+      sku: "1650HZB"
+    }
+  },
+
+
+
+
+
+
+
   {
     tankId: 2,
     name: 'Harlequin 650ITE',
@@ -864,77 +943,6 @@ export const tanks = [
       url: "https://harlequinplastics.co.uk/new-product-1400-ssl/",
       sku: "1400SSL"
     }
-  },
-
-  {
-    tankId: 14,
-    name: 'Diamond 1650HZB',
-    slug: 'Diamond-1650HZB-bunded-heating-oil-tank',
-    brand: 'Diamond',
-    price: 1282.80,
-    old: false,
-    guarantee: 10,
-    image: 'Diamond/Diamond_1650HSL_ze0jqk.png',  
-    imagealt: 'Diamond 1650HZB bunded domestic heating oil tank',
-    description: 'A high-quality bunded tank',
-    shopifyFlag: true,
-    shopify_id: '4424630173762',
-    physicalprops:   {volume: 1650,
-                  brimfulVolume: 1662,
-                  height: 143,
-                  length: 201,
-                  width: 135,
-                  internalHeight: 123,
-                  weight: 150,
-                  shapeType: '',
-                  internalShape: 'horizontal cylinder',
-                  material: 'Plastic',
-                  bunded: 'Bunded', 
-                  fuelType: 'Heating Oil, Diesel, Gas Oil '
-                },
-    descriptionmain: {description: '',
-                      topfill: '', 
-                      lid: 'Heavy duty lockable manhole access', 
-                      bottomfill: 'Bottom outlet with 1" BSP (F) thread',
-                      inspectioncap: '4" lockable inspection cap',
-                      gauge: 'Contents dipstick',
-                      monitorpoint: '32mm mounting point (with cover) for fitting an electronic oil monitor',
-                      misc1: 'Moulded in handles for ease of lifting',
-                      misc2: 'Non-Corrosive, made from MDPE',
-                      misc3: '10 year gaurantee (requires registration)',
-                      misc4: 'Meets regulations - independently tested and approved to EN13341',
-                      misc5: 'Made by Harlequin Tanks',
-                      misc6: ''
-                      },
-    delivery: {standardcost: 'free',
-               standardtype: 'tail lift',
-               standardtime: '48 hours',
-               conditions: '24 / 48 hour delivery if order placed before 11am, excludes AB, BT, DD, EH, FK, G, HS, IV, KA, KW, KY, ML, PA & PH postcodes.  Delivery to curbside.',
-               option1cost: '£25',
-               option1type: 'tail lift',
-               option1time: '24 hours',
-               option2cost: '',
-               option2type: '',
-               option2time: '',
-              },
-    seo:  {title: 'Diamond 1650 Litre HZB Bunded Oil Tank | SmartNow',
-          keywords: 'oil tank, bunded, diamond, 1650, CE-mark, 24 hour deliver, 48 hour delivery',
-          description: "FREE 48 hour delivery, free oil monitor and free tank pack! The Diamond 1650HZB 1650 litre low profile bunded heating oil tank. 10 yr guarantee."
-          },
-    promo:   {include: true,
-              image: "Accessories/Tankpack_jx9ow0.jpg",
-              imagealt: "Tank pack including bottom outlet and Apollo oil monitor",
-              header: "FREE tank bottom outlet kit and Apollo Ultrasonic oil monitor!",
-              text: "The Apollo Ultrasonic monitors the level of fuel inside the tank and shows it on the display in your home, including a low level warning alert.  The tank outlet kit includes everything you need to connect your heating oil tank to the supply pipe"
-            },
-      strucdata: {
-      image1: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_380,q_100,w_380/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
-      image2: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_493/v1581353009/Diamond/Diamond_1650HSL_ze0jqk.png",
-      image3: "https://res.cloudinary.com/cloudinaryepic/image/upload/c_pad,h_370,q_100,w_658/v1581353009/Diamond/Diamond_1000SSL_lpcggs.png",
-      ratingvalue: 4.5,
-      reviewcount: 13,
-      url: "https://harlequinplastics.co.uk",
-      sku: "1650HZB"
-    }
   }
+
 ];

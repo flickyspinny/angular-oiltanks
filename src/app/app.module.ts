@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Client } from 'shopify-buy';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { environment } from '../environments/environment';
 import {LayoutModule} from '@angular/cdk/layout';
