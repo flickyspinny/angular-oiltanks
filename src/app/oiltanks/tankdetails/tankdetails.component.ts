@@ -30,6 +30,9 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   breakpoint;
   cloudinaryOptions;
   schema;
+  tank;
+  urlParameter;
+  tankData;
 
 
   constructor(
@@ -49,15 +52,21 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
 
 
   ngOnInit() {
+//Get the :id passed in on the URL.  This identifies which tank we're talking about
     this.sub = this.route.params.subscribe(params => {
-      this._tankId = +params['tankId'];
+      this.urlParameter = +params['tankId'];
+//Select (into the variable tankData) all the data from the array "tanks" using the urlParameter
+      this.tankData =  tanks.find(x => x.tankId == this.urlParameter);
+//Select (into the variable _tankId) the tankId of the tank identified in tankData
+      this._tankId = this.tankData.tankId
       });
+
 //Set the instance of the title variable (this.title) to the value in seo.title in tanks.ts
-    this.title = this.products[this._tankId-2].seo.title;
+    this.title = this.tankData.seo.title;
 //Use the titleService to set the Page Title
     this.titleService.setTitle(this.title);
-    this.meta.updateTag ({ name: 'description', content: this.products[this._tankId-2].seo.description});
-    this.meta.updateTag ({ name: 'keywords', content: this.products[this._tankId-2].seo.keywords });
+    this.meta.updateTag ({ name: 'description', content: this.tankData.seo.description});
+    this.meta.updateTag ({ name: 'keywords', content: this.tankData.seo.keywords });
 // Breakpoint Observer for Cloudinary images
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -95,24 +104,24 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
     this.schema = {
       "@context": "https://schema.org",
       "@type": "Product",
-      "description": this.products[this._tankId-2].seo.description,
-      "name": this.products[this._tankId-2].name,
-      "sku": this.products[this._tankId-2].strucdata.sku,
+      "description": this.tankData.seo.description,
+      "name": this.tankData.name,
+      "sku": this.tankData.strucdata.sku,
       "image": [
-        this.products[this._tankId-2].strucdata.image1,
-        this.products[this._tankId-2].strucdata.image2,
-        this.products[this._tankId-2].strucdata.image3
+        this.tankData.strucdata.image1,
+        this.tankData.strucdata.image2,
+        this.tankData.strucdata.image3
        ],
       "brand": {
         "@type": "Thing",
-        "name": this.products[this._tankId-2].brand
+        "name": this.tankData.brand
       },
       "offers": {
         "@type": "Offer",
-        "url": this.products[this._tankId-2].strucdata.url,
+        "url": this.tankData.strucdata.url,
         "availability": "http://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
-        "price": this.products[this._tankId-2].price,
+        "price": this.tankData.price,
         "priceCurrency": "GBP",
         "priceValidUntil": "2030-11-05",
         "seller": {
@@ -122,8 +131,8 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": this.products[this._tankId-2].strucdata.ratingvalue,
-        "reviewCount": this.products[this._tankId-2].strucdata.reviewcount
+        "ratingValue": this.tankData.strucdata.ratingvalue,
+        "reviewCount": this.tankData.strucdata.reviewcount
       },
       "review": {
         "@type": "Review",
@@ -141,42 +150,42 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
         {
           "@type": "PropertyValue",
           "name": "Guarantee",
-          "value": this.products[this._tankId-2].guarantee + " Years"
+          "value": this.tankData.guarantee + " Years"
         },
         {
         "@type": "PropertyValue",
           "name": "Delivery",
-          "value": "FREE - " + this.products[this._tankId-2].delivery.standardtime
+          "value": "FREE - " + this.tankData.delivery.standardtime
         },
         {
           "@type": "PropertyValue",
           "name": "Volume",
-          "value": this.products[this._tankId-2].physicalprops.volume + " Litres"
+          "value": this.tankData.physicalprops.volume + " Litres"
         },
         {
           "@type": "PropertyValue",
           "name": "Includes",
-          "value": this.products[this._tankId-2].promo.header
+          "value": this.tankData.promo.header
         },
         {
           "@type": "PropertyValue",
           "name": "Fuel Type",
-          "value": this.products[this._tankId-2].physicalprops.fuelType
+          "value": this.tankData.physicalprops.fuelType
         },
         {
           "@type": "PropertyValue",
           "name": "Tank Type",
-          "value": this.products[this._tankId-2].physicalprops.bunded
+          "value": this.tankData.physicalprops.bunded
         },
         {
           "@type": "PropertyValue",
           "name": "Shape Type",
-          "value": this.products[this._tankId-2].physicalprops.shapeType
+          "value": this.tankData.physicalprops.shapeType
         },
         {
           "@type": "PropertyValue",
           "name": "Material",
-          "value": this.products[this._tankId-2].physicalprops.material
+          "value": this.tankData.physicalprops.material
         }
       ]
     };  
@@ -185,7 +194,7 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   
   
   ngAfterViewInit() {
-    showBuyButton(this.products[this._tankId-2].shopify_id);
+    showBuyButton(this.tankData.shopify_id);
   }
 
 
