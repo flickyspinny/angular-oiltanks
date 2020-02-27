@@ -56,6 +56,7 @@ import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstaller
 
 
 
+
 const config = {
       apiKey: "AIzaSyBxyVTrfNZzURbB7iAzNqb3Re0PUVm8jgI",
       authDomain: "fir-demo-11999.firebaseapp.com",
@@ -88,8 +89,7 @@ const config = {
     FAQComponent,
     PrivacyComponent,
     TermsComponent,
-    OiltankinstallersComponent,
-
+    OiltankinstallersComponent
   ],
 
 
