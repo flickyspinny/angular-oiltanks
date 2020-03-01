@@ -1,2 +1,3 @@
+Sitemap: https://smartnowuk.com/sitemap.xml
 User-agent: *
 Allow: /
