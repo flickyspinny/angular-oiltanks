@@ -130,7 +130,7 @@ const config = {
       { path: 'privacy_policy', component: PrivacyComponent },  
       { path: 'faq', component: FAQComponent },  
       { path: 'terms_and_conditions', component: TermsComponent },  
-      { path: 'domestic_heating_oil_tanks/:sl', component: TankdetailsComponent},
+      { path: 'domestic_heating_oil_tanks/:slug', component: TankdetailsComponent},
 //      { path: 'domestic_heating_oil_tanks/:productName', component: ProductDetailsComponent },      
       { path: '**', component: OiltanksComponent },
     ],
