@@ -54,9 +54,10 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
   ngOnInit() {
 //Get the :id passed in on the URL.  This identifies which tank we're talking about
     this.sub = this.route.params.subscribe(params => {
-      this.urlParameter = +params['tankId'];
+      this.urlParameter = params['slug'];
+      console.log(this.urlParameter);
 //Select (into the variable tankData) all the data from the array "tanks" using the urlParameter
-      this.tankData =  tanks.find(x => x.tankId == this.urlParameter);
+      this.tankData =  tanks.find(x => x.slug === this.urlParameter);
 //Select (into the variable _tankId) the tankId of the tank identified in tankData
       this._tankId = this.tankData.tankId
       });
