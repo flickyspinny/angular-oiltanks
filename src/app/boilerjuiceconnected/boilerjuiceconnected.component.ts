@@ -13,11 +13,11 @@ export class BoilerjuiceconnectedComponent implements OnInit {
   constructor(
     private meta: Meta,
     private titleService: Title){};
-    private metaTagService: Meta;
+
 
 ngOnInit() {
       this.titleService.setTitle(this.title);
-      this.metaTagService.updateTag(
+      this.meta.updateTag(
       { name: 'description', content: 'Never run out of oil again.  Smash your heating bills.  The best oil, gas and electricity deals tailored to you.' });
     }
 
