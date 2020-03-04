@@ -1592,7 +1592,7 @@ export const tanks = [
     imagealt: 'Harlequin 2500HQi bunded domestic heating oil tank',
     description: 'A large bunded tank',
     shopifyFlag: true,
-    shopify_id: '4424810594370',
+    shopify_id: '4472942788674',
     physicalprops:   {volume: 2500,
                   brimfulVolume: 2571,
                   height: 147,
