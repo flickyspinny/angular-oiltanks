@@ -108,6 +108,7 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
       "description": this.tankData.seo.description,
       "name": this.tankData.name,
       "sku": this.tankData.strucdata.sku,
+      "mpn": this.tankData.strucdata.sku,
       "image": [
         this.tankData.strucdata.image1,
         this.tankData.strucdata.image2,

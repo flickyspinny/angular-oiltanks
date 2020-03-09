@@ -61,7 +61,9 @@ title = "The UK's #1 Independent Supplier of Bunded Heating Oil Tanks | 24/48 ho
              brandHarlequin: true,
              brandTitan: true,
              brandCarbery: true,       
-             brandDiamond: true,          
+             brandDiamond: true,    
+             recTank: true,  
+             notRecTank: true          
             };
 
   Product = tanks; 
@@ -131,7 +133,13 @@ this.meta.updateTag(
        (x.brand === 'Harlequin' && this.filter.brandHarlequin) ||
        (x.brand === 'Titan' && this.filter.brandTitan) ||
        (x.brand === 'Carbery' && this.filter.brandCarbery) ||
-       (x.brand === 'Diamond' && this.filter.brandDiamond))
+       (x.brand === 'Diamond' && this.filter.brandDiamond))       
+       &&
+       ((x.recommendedTank !== '' && this.filter.recTank === false) ||
+       (x.recommendedTank === true && this.filter.recTank)) 
+
+
+
     );
 
  }; 
