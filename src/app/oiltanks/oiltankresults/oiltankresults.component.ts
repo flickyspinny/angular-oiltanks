@@ -135,7 +135,7 @@ this.meta.updateTag(
        (x.brand === 'Carbery' && this.filter.brandCarbery) ||
        (x.brand === 'Diamond' && this.filter.brandDiamond))       
        &&
-       ((x.recommendedTank !== '' && this.filter.recTank === false) ||
+       ((this.filter.recTank === false) ||
        (x.recommendedTank === true && this.filter.recTank)) 
 
 
