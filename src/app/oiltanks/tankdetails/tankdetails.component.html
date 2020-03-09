@@ -1,3 +1,4 @@
+<div class="container">
 
 <ngx-json-ld [json]="schema"></ngx-json-ld>
 <!--Row One: Contains Title -->
@@ -65,25 +66,25 @@
               <!--Manufacturer's logo -->
               <!-- Price -->
                 <div id="pricecontent">
-                  <div class="price" *ngIf="p.price">{{p.price| currency: 'GBP'}} 
+                  <div class="price" *ngIf="p.price">{{p.price| currency: 'GBP'}}
                   </div>
                   <div class="priceexvat" *ngIf="p.price">{{p.price / 6 * 5 | currency: 'GBP' }} ex. VAT  
                   </div>
                 </div>
 
 <!-- shopify buy button -->
-                <div id='product-component-buy-button'></div>
+                <div id='product-component-buy-button'></div><br>
                 <!--Lead time-->
                 <!--Delivery Options-->
-                <h3>Delivery Options</h3>
-                  <p *ngIf="p.delivery.standardcost"><strong>{{p.delivery.standardtime | titlecase}} - 
+                <h2>Delivery Options</h2>
+                  <p class="tab" *ngIf="p.delivery.standardcost"><strong>{{p.delivery.standardtime | titlecase}} - 
                                                       {{p.delivery.standardcost | uppercase}}</strong></p>
 
-                  <p *ngIf="p.delivery.option1cost"><strong>{{p.delivery.option1time | titlecase}} - 
+                  <p class="tab" *ngIf="p.delivery.option1cost"><strong>{{p.delivery.option1time | titlecase}} - 
                                                       {{p.delivery.option1cost | titlecase}}</strong></p>
 
 
-                  <p *ngIf="p.delivery.option2cost"><strong>{{p.delivery.option2cost | titlecase}} - 
+                  <p class="tab" *ngIf="p.delivery.option2cost"><strong>{{p.delivery.option2cost | titlecase}} - 
                                                       {{p.delivery.option2time | titlecase}} </strong>
                   </p>
                   <p>{{p.delivery.conditions}}
@@ -148,9 +149,9 @@
 
     <!-- Contains description section-->    
     <div id="desc">
-      <div id="boxcontent">
-        <h4>{{p.name}} - {{p.physicalprops.volume}} Litre {{p.physicalprops.shapeType | titlecase}} {{p.physicalprops.bunded | titlecase}} Heating Oil Tank</h4>
-        <p>{{p.physicalprops.volume}} litre {{p.physicalprops.bunded | lowercase}} kerosene storage tank.</p>
+      <div id="boxcontent1">
+        <h2>{{p.name}} - {{p.physicalprops.volume}} Litre {{p.physicalprops.shapeType | titlecase}} {{p.physicalprops.bunded | titlecase}} Oil Tank Details</h2>
+        <h3>{{p.physicalprops.volume}} litre {{p.physicalprops.bunded | lowercase}} heating oil storage tank.</h3>
         <p>This quality {{p.bunded}} heating oil tank is suitable for both domestic and commercial fuel oil storage.</p>
         <p>Supplied complete with:</p>
     
@@ -163,7 +164,7 @@
         <li *ngIf="p.descriptionmain.misc2">{{p.descriptionmain.misc2}}</li> 
         <li *ngIf="p.descriptionmain.misc3">{{p.descriptionmain.misc3}}</li> 
         <li *ngIf="p.descriptionmain.misc4">{{p.descriptionmain.misc4}}</li> 
-        <li *ngIf="p.descriptionmain.misc5">{{p.descriptionmain.misc5}}</li>   
+        <li *ngIf="p.descriptionmain.misc5">{{p.descriptionmain.misc5}}</li>   <br>
 
         <p *ngIf="p.descriptionmain.topfill">Top Outlet: {{p.descriptionmain.topfill}}</p>   
 
@@ -180,9 +181,9 @@
 
 
     <!-- Product Specifics--> 
-    <div id="desc">
-      <div id="boxcontent">
-              
+    <div id="desc1">
+      <div id="boxcontent2">
+        <h2>Specifications</h2>      
         <p *ngIf="p.guarantee">Guarantee: <strong>{{p.guarantee}} Year Guarantee</strong></p>
         <p *ngIf="p.physicalprops.material">Made From: <strong>{{p.physicalprops.material | titlecase}}</strong></p>
         <p *ngIf="p.physicalprops.fuelType">Suitable For Fuel: <strong> {{p.physicalprops.fuelType | titlecase}}</strong></p>
@@ -203,5 +204,6 @@
 <!-- end of row -->
 
 
+</div>
 </div>
 

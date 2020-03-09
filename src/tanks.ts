@@ -35,7 +35,7 @@ export const tanks = [
                       monitorpoint: '32mm hole with cover for an electronic oil monitor',
                       misc1: '',
                       misc2: 'Installation:  cement base 231.5 x 127 cm',
-                      misc3: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc3: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc4: '',
                       misc5: '',
                       misc6: ''
@@ -111,7 +111,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 275 x 131 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -183,7 +183,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 248 x 149 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -255,7 +255,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 250 x 220 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -326,7 +326,7 @@ export const tanks = [
                       monitorpoint: '32mm hole with cover for an electronic oil monitor',
                       misc1: '',
                       misc2: 'Inner tank vent',
-                      misc3: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc3: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc4: '',
                       misc5: '',
                       misc6: ''
@@ -399,7 +399,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 270 x 155 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -471,7 +471,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 250 x 185 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -544,7 +544,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 214 x 214 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -616,7 +616,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 296 x 192 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },
@@ -688,7 +688,7 @@ export const tanks = [
                       misc1: '',
                       misc2: 'Inner tank vent',
                       misc3: 'Installation:  cement base 306 x 203.5 cm',
-                      misc4: 'Available as a tank-only HQi model, tank, monitor and tankpack ITE model (this one), or top outlet ITT model.  If you require HQi or ITT please contact us to place your order',
+                      misc4: 'Available as a bundle of tank, monitor and tankpack ITE model (this one - excellent value) or the tank-only HQi model (also available online from us).  The top-outlet ITT model is also available - please contact us to place your order',
                       misc5: '',
                       misc6: ''
                       },

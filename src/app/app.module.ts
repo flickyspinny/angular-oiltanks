@@ -35,9 +35,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSortModule} from '@angular/material/sort';
 import { OilinsuranceComponent } from './oilinsurance/oilinsurance.component';
-import { OiltanksComponent } from './oiltanks/oiltanks/oiltanks.component';
 import { OiltankresultsComponent } from './oiltanks/oiltankresults/oiltankresults.component';
-import { OiltankfilterComponent } from './oiltanks/oiltankfilter/oiltankfilter.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { BoilerjuiceconnectedComponent } from './boilerjuiceconnected/boilerjuiceconnected.component';
 import { BoilerserviceComponent } from './boilerservice/boilerservice.component';
@@ -74,8 +72,6 @@ const config = {
     AppComponent,
     MaintabsComponent,
     OilinsuranceComponent,
-    OiltanksComponent,
-    OiltankfilterComponent,
     OiltankresultsComponent,
     BoilerjuiceconnectedComponent,
     BoilerserviceComponent,
@@ -132,7 +128,7 @@ const config = {
       { path: 'terms_and_conditions', component: TermsComponent },  
       { path: 'domestic_heating_oil_tanks/:slug', component: TankdetailsComponent},
 //      { path: 'domestic_heating_oil_tanks/:productName', component: ProductDetailsComponent },      
-      { path: '**', component: OiltanksComponent },
+      { path: '**', component: OiltankresultsComponent },
     ],
     {scrollPositionRestoration: 'enabled'})
   ],

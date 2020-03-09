@@ -1,4 +1,9 @@
+ .tab { margin-left: 40px; }
 
+h1 {
+
+    text-align: center;
+}
 
 tr.example-detail-row {
   height: 0;

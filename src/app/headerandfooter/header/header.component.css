@@ -6,7 +6,7 @@
   margin: auto;
   border: 1px;
 }*/
-header {
+.container {
     background: linear-gradient(to bottom, #2B3864 0%, #1B75BB 50%, #26A9E0 100%);
 }
 mat-drawer-content {

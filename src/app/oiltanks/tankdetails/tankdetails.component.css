@@ -1,3 +1,5 @@
+ .tab { margin-left: 40px; }
+
 .object-fit_contain { object-fit: contain }
 /*
 #content {
@@ -51,7 +53,7 @@
   background: #DAF;
 }
 
-#desc {
+#desc, #desc1 {
   float: left;
   width: 100%;
   height: auto;
@@ -78,7 +80,7 @@
 
 
 
-#boxcontent {
+#boxcontent, #boxcontent1, #boxcontent2 {
   float: left;
   width: 100% -30px;
   height: auto;
