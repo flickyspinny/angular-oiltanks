@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <p>
+      installerlocations works!
+      </p>
+      <div *ngFor="let county of location"
+      a [routerLink]="['/oil_tank_installers', county.countySlug]"> 
+        {{county.countyName}}
+      </div>  
+    </div>
+  </div>
+</div>

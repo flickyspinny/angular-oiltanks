@@ -294,53 +294,7 @@
  
 
 
-<!--Results Column-->
 
-<!--  <div id="rightcolumn">
-    <table mat-table
-          [dataSource]="filteredProducts"
-          multiTemplateDataRows
-          class="rightcolumncontent">
-      <!--     "mat-elevation-z8"-->
-<!--     <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
-        <th mat-header-cell *matHeaderCellDef> {{column}} </th> 
-        <td mat-cell *matCellDef="let element"> {{element[column]}}
-        </td>
-      </ng-container> -->
-
-
-      <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
-        
-<!--    <ng-container matColumnDef="expandedDetail">
-        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
-          <div class="oiltank-detail"
-              [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-            <div class="oiltank-diagram"><img src={{element.image}}> -->
-              <!--Image-->
-  <!--          </div>
-
-            <div class="oiltank-description">
-              <p class="prodlist">{{element.name}}</p>
-              {{element.description}}<br>
-              Volume: <b> {{element.volume}} litres </b><br>
-              Height: <b> {{element.height}}cm</b><br>
-              Length: <b> {{element.length}}cm</b><br>
-              Width: <b>{{element.width}}cm</b><br>
-            </div>
-          </div>
-        </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-      <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
-          class="oiltank-row"
-          [class.example-expanded-row]="expandedElement === element"
-          (click)="expandedElement = expandedElement === element ? null : element">
-      </tr>
-      <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
-    </table> -->
-<!--End old version-->
-<!--  </div>-->
 
   <div class="col-md-8 col-sm-12 col-xs-12">
 
@@ -362,15 +316,7 @@
         <td mat-cell 
             *matCellDef="let element"
             width=25%
-            
             a [routerLink]="['/domestic_heating_oil_tanks', element.slug]"> 
-<!--Image--            <picture>
-              <source media="(min-width: 800px)" srcset="{{element.image_thumb}}">
-              <source media="(min-width: 374px)" srcset="{{element.image_thumb_85}}">
-              <img src="{{element.image_thumb}}" alt="{{element.imagealt}}">
-            </picture>-->
-<!--          <img src="{{element.image_thumb}}" alt="{{element.imagealt}}"> -->
-<!--          <img class="Sirv" data-src="{{element.image}}" alt="{{element.imagealt}}"> -->
         <cl-image  public-id="{{element.image}}"
         [attr.alt]="element.imagealt">
           <cl-transformation width="150" crop="scale">

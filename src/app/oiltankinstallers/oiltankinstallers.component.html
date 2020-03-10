@@ -1,9 +1,38 @@
 <div class="container">
 
-
-  <!--Row One: Contains prodleft, image, promo, desc, add to basket and product info -->
   <div class="row">
-   <!-- <img src='https://boiler-juice-static-assets-prod.s3-eu-west-1.amazonaws.com/marketing/homepage/DanDavid_HB_1110x137.gif'> -->
+    <div class="col">
+      <ng-container *ngIf="urlTownParameter then townCase else nextCase">
+      </ng-container>
+
+      <!-- this template called if urlTownParameter exists -->
+      <ng-template #townCase> 
+        <h1>Oil Tank Installation in {{urlTownParameter | titlecase}}, {{urlCountyParameter | titlecase}}</h1> 
+      </ng-template>
+
+      <!-- this template called if urlTownParameter does not exist -->
+      <ng-template #nextCase>
+        <ng-container *ngIf="urlCountyParameter then countyCase else noLocationCase">
+        </ng-container>
+      </ng-template>
+      
+      <ng-template #countyCase> 
+        <h1>Oil Tank Installation in {{urlCountyParameter | titlecase}}</h1>
+        <div *ngFor="let Location of countyData.towns"
+          a [routerLink]="['/oil_tank_installers', urlCountyParameter, Location.townSlug]"> 
+          {{Location.townName}}
+        </div>
+      </ng-template>
+
+      <ng-template #noLocationCase> 
+        <h1>Local Oil Tank Installers</h1> 
+      </ng-template>
+    </div>
+  </div>
+
+
+
+  <div class="row">
 
     <!-- Prodleft: contacts contact us details card -->
     <div class="col-md-4 col-sm-12">

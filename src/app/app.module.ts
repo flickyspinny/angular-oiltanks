@@ -51,6 +51,7 @@ import { FAQComponent } from './general/faq/faq.component';
 import { PrivacyComponent } from './general/privacy/privacy.component';
 import { TermsComponent } from './general/terms/terms.component';
 import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
+import { InstallerlocationsComponent } from './oiltankinstallers/installerlocations/installerlocations.component';
 
 
 
@@ -85,7 +86,8 @@ const config = {
     FAQComponent,
     PrivacyComponent,
     TermsComponent,
-    OiltankinstallersComponent
+    OiltankinstallersComponent,
+    InstallerlocationsComponent,
   ],
 
 
@@ -127,6 +129,9 @@ const config = {
       { path: 'faq', component: FAQComponent },  
       { path: 'terms_and_conditions', component: TermsComponent },  
       { path: 'domestic_heating_oil_tanks/:slug', component: TankdetailsComponent},
+      { path: 'locations-overview', component:  InstallerlocationsComponent},
+      { path: 'oil_tank_installers/:countySlug', component: OiltankinstallersComponent},
+      { path: 'oil_tank_installers/:countySlug/:townSlug', component: OiltankinstallersComponent},
 //      { path: 'domestic_heating_oil_tanks/:productName', component: ProductDetailsComponent },      
       { path: '**', component: OiltankresultsComponent },
     ],
