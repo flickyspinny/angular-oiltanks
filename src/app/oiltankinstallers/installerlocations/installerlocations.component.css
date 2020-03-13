@@ -1,0 +1,9 @@
+button {
+  margin-bottom: 8px;
+  width: 180px;
+}
+
+mat-expansion-panel, mat-accordion {
+  margin-bottom: 16px;  
+  margin-top: 16px; 
+}

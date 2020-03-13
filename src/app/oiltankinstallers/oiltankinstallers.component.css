@@ -66,3 +66,12 @@
   margin: 15px;
   background-color: #FFFFFF;
 }
+
+button {
+  margin-bottom: 8px;
+  width: 180px;
+}
+
+mat-expansion-panel, mat-accordion {
+  margin-bottom: 16px;  
+}

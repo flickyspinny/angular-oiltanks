@@ -18,10 +18,6 @@
       
       <ng-template #countyCase> 
         <h1>Oil Tank Installation in {{urlCountyParameter | titlecase}}</h1>
-        <div *ngFor="let Location of countyData.towns"
-          a [routerLink]="['/oil_tank_installers', urlCountyParameter, Location.townSlug]"> 
-          {{Location.townName}}
-        </div>
       </ng-template>
 
       <ng-template #noLocationCase> 
@@ -60,5 +56,45 @@
     </div>  
   <!-- end of row -->
   </div>
+
+  <!-- locations row -->
+  <div class="row">    
+    <div class="col"> 
+      <ng-container *ngIf="urlTownParameter then blankCase else showCase">
+      </ng-container>
+
+      <!-- this template called if urlTownParameter exists -->
+      <ng-template #blankCase> 
+      </ng-template>
+
+      <!-- this template called if urlTownParameter does not exist -->
+      <ng-template #showCase>
+        <ng-container *ngIf="urlCountyParameter then showTownsCase">
+        </ng-container>
+      </ng-template>
+      
+      <ng-template #showTownsCase> 
+      <mat-accordion>
+      <mat-expansion-panel>
+            <mat-expansion-panel-header>
+      <mat-panel-title>
+        <strong>Select Your Nearest Town in {{urlCountyParameter}}</strong>
+      </mat-panel-title>
+            </mat-expansion-panel-header>    
+        <div class="card-deck row">
+          <div class="card col-lg-3 col-md-4 col-sm-6" *ngFor="let Location of countyData.towns; let index = index">
+            <div class="card-block" align="center"> 
+              <button mat-raised-button color="primary"
+              a [routerLink]="['/oil_tank_installers', urlCountyParameter, Location.townSlug]">{{Location.townName}}</button>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      </mat-accordion>
+      </ng-template>
+
+    </div>
+  </div>   
+
 <!-- end of content-->
 </div>
