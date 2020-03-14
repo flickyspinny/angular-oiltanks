@@ -18,6 +18,9 @@ export class OiltankinstallersComponent implements OnInit {
   urlCountyParameter;
   location = locations;
   countyData;
+  countyDataArray;
+  townDataArray;
+  townDataArray1;
   townData;
   townName;
 
@@ -39,9 +42,23 @@ export class OiltankinstallersComponent implements OnInit {
       this.urlTownParameter = params['townSlug'];
       this.urlCountyParameter = params['countySlug'];    
     });
-    
+    console.log('urlTownParameter', this.urlTownParameter);
+
     this.countyData =  locations.find(x => x.countySlug === this.urlCountyParameter);
     console.log("county Name", this.countyData.countyName);
+
+    this.countyDataArray =  this.location.find(x => x.countySlug === this.urlCountyParameter);
+    console.log("County Array", this.countyDataArray);
+
+    this.townDataArray = this.location.find(county => 
+      county.towns.find(town => town.townSlug == this.urlTownParameter));
+        console.log("Town Array", this.townDataArray);
+
+
+            console.log("Town Array1", this.townDataArray.towns.find(x => x.townSlug === this.urlTownParameter));
+//    products.find(product => product.items.some(item => item.name === 'milk'));
+
+
 
 
 
