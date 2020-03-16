@@ -102,6 +102,8 @@ export class TankdetailsComponent implements  OnInit, AfterViewInit {
         console.log(this.variablemainwidth);
       }
     });  
+
+    
     this.schema = {
       "@context": "https://schema.org",
       "@type": "Product",

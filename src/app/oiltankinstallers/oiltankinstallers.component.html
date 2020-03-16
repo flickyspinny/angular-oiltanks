@@ -1,5 +1,5 @@
+<ngx-json-ld [json]="schema"></ngx-json-ld>
 <div class="container">
-
   <div class="row">
     <div class="col">
       <ng-container *ngIf="urlTownParameter then townCase else nextCase">
@@ -7,7 +7,7 @@
 
       <!-- this template called if urlTownParameter exists -->
       <ng-template #townCase> 
-        <h1>Oil Tank Installation in {{urlTownParameter | titlecase}}, {{urlCountyParameter | titlecase}}</h1> 
+        <h1>Oil Tank Installation in {{townName | titlecase}}, {{countyData.countyName | titlecase}}</h1> 
       </ng-template>
 
       <!-- this template called if urlTownParameter does not exist -->
@@ -17,7 +17,7 @@
       </ng-template>
       
       <ng-template #countyCase> 
-        <h1>Oil Tank Installation in {{urlCountyParameter | titlecase}}</h1>
+        <h1>Oil Tank Installation in {{countyData.countyName | titlecase}}</h1>
       </ng-template>
 
       <ng-template #noLocationCase> 
@@ -78,7 +78,7 @@
       <mat-expansion-panel>
             <mat-expansion-panel-header>
       <mat-panel-title>
-        <strong>Select Your Nearest Town in {{urlCountyParameter}}</strong>
+        <strong>Select Your Nearest Town in {{countyData.countyName}}</strong>
       </mat-panel-title>
             </mat-expansion-panel-header>    
         <div class="card-deck row">
