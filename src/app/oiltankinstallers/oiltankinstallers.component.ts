@@ -46,8 +46,6 @@ export class OiltankinstallersComponent implements OnInit {
 
     if (this.urlCountyParameter != null) {
         this.countyData =  locations.find(x => x.countySlug === this.urlCountyParameter);
-        console.log("county Name", this.countyData.countyName);
-        console.log("Towns", this.countyData.towns);
     };
 
     // Execute if a Town is passed in from Route Params
@@ -58,7 +56,7 @@ export class OiltankinstallersComponent implements OnInit {
       this.title = 'Oil Tank Installation in ' + this.townName + ', ' + this.countyData.countyName + ' from £399 with SmartNow';
       this.content = 'Get three FREE quotes instantly for your oil tank installation in ' + this.townName + ' with SmartNow.  Tank installs from just £399!';
       this.areaType = 'City';
-      this.areaName = this.townName.townName;
+      this.areaName = this.townName;
 
     }
     // Execute if a Town is NOT passed in from Route Params
@@ -99,11 +97,27 @@ export class OiltankinstallersComponent implements OnInit {
         "@type": "Organization",
         "name": "SmartNow Ltd"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4.9,
-        "reviewCount": 16
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Oil Tank Installation",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heating Oil Tank Installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heating Oil Tank Replacement"
+            }
+          }
+        ]
       }
+
     };  
 
 
