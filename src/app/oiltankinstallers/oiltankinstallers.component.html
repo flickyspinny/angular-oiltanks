@@ -7,7 +7,10 @@
 
       <!-- this template called if urlTownParameter exists -->
       <ng-template #townCase> 
-        <h1>Oil Tank Installation in {{townName | titlecase}}, {{countyData.countyName | titlecase}}</h1> 
+        <br>
+        <h3 style="text-align: center">{{countyData.countyName | uppercase}}</h3>
+        <h1 style="text-align: center">Oil Tank Installation in {{townName | titlecase}} </h1> 
+        <h4>As the oil tank installation specialists in and around {{townName}}, the team at SmartNow are perfectly placed to assist with installing your new tank. Our friendly team can assist you over the phone or email, or we can visit you at home to ensure you get the best possible service.</h4>
       </ng-template>
 
       <!-- this template called if urlTownParameter does not exist -->
@@ -17,11 +20,14 @@
       </ng-template>
       
       <ng-template #countyCase> 
-        <h1>Oil Tank Installation in {{countyData.countyName | titlecase}}</h1>
+        <br>
+        <h1 style="text-align: center">Oil Tank Installation in {{countyData.countyName | titlecase}}</h1>
+        <h4>As the oil tank installation specialists in {{countyData.countyName | titlecase}}, the team at SmartNow are perfectly placed to assist with installing your new tank. Our friendly team can assist you over the phone or email, or we can visit you at home to ensure you get the best possible service.</h4>
       </ng-template>
 
       <ng-template #noLocationCase> 
-        <h1>Local Oil Tank Installers</h1> 
+        <h1 style="text-align: center">Local Oil Tank Installation</h1> 
+        <h4>As the oil tank installation specialists in the UK, the team at SmartNow are perfectly placed to assist with installing your new tank. Our friendly team can assist you over the phone or email, or we can visit you at home to ensure you get the best possible service.</h4>
       </ng-template>
     </div>
   </div>
@@ -69,7 +75,7 @@
 
       <!-- this template called if urlTownParameter does not exist -->
       <ng-template #showCase>
-        <ng-container *ngIf="urlCountyParameter then showTownsCase">
+        <ng-container *ngIf="urlCountyParameter then showTownsCase else showCountyCase">
         </ng-container>
       </ng-template>
       
@@ -86,6 +92,26 @@
             <div class="card-block" align="center"> 
               <button mat-raised-button color="primary"
               a [routerLink]="['/oil_tank_installers', urlCountyParameter, Location.townSlug]">{{Location.townName}}</button>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      </mat-accordion>
+      </ng-template>
+
+      <ng-template #showCountyCase> 
+      <mat-accordion>
+      <mat-expansion-panel>
+            <mat-expansion-panel-header>
+      <mat-panel-title>
+        <strong>Select Your County</strong>
+      </mat-panel-title>
+            </mat-expansion-panel-header>    
+        <div class="card-deck row">
+          <div class="card col-lg-3 col-md-4 col-sm-6" *ngFor="let Location of location; let index = index">
+            <div class="card-block" align="center"> 
+              <button mat-raised-button color="primary"
+              a [routerLink]="['/oil_tank_installers', Location.countySlug]">{{Location.countyName}}</button>
             </div>
           </div>
         </div>
