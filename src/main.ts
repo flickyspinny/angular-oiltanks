@@ -5,7 +5,7 @@ import { AppModule } from './app/app.module';
 
 
 
-  //enableProdMode();
+enableProdMode();
 
 
 platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
