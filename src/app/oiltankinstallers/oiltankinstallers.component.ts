@@ -4,6 +4,7 @@ import { ActivatedRoute, RouterModule, Router} from '@angular/router';
 import { locations } from '../../locations';
 import {MatButtonModule} from '@angular/material/button';
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 
 
