@@ -5,7 +5,7 @@ import { locations } from '../../locations';
 import {MatButtonModule} from '@angular/material/button';
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { ReactiveFormsModule } from '@angular/forms'; 
-import { FormBuilder} from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
 
 
 
@@ -29,7 +29,7 @@ export class OiltankinstallersComponent implements OnInit {
   schema;
   areaType;
   areaName;
-
+  FormData: FormGroup;
 
   constructor(
     private titleService: Title,
@@ -40,6 +40,13 @@ export class OiltankinstallersComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+  //FormData
+  this.FormData = this.builder.group({
+    Fullname: new FormControl('', [Validators.required]),
+    Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
+    Comment: new FormControl('', [Validators.required])
+  });
+  
   //Subscribe to route paramters
     this.sub = this.route.params.subscribe(params => {
       this.urlTownParameter = params['townSlug'];
