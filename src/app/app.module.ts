@@ -53,6 +53,7 @@ import { TermsComponent } from './general/terms/terms.component';
 import { OiltankinstallersComponent } from './oiltankinstallers/oiltankinstallers.component';
 import { InstallerlocationsComponent } from './oiltankinstallers/installerlocations/installerlocations.component';
 import { OiltankfilterComponent } from './oiltanks/oiltankfilter/oiltankfilter.component';
+import { ContactService } from './services/contact.service';
 
 
 
@@ -140,7 +141,8 @@ const config = {
   ],
   providers: [
     HttpClientModule,
-    TankService
+    TankService,
+    ContactService
   ],
   bootstrap: [AppComponent]
 })

@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { ReactiveFormsModule } from '@angular/forms'; 
 import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
+import { ContactService} from '../services/contact.service';
 
 
 
@@ -36,8 +37,10 @@ export class OiltankinstallersComponent implements OnInit {
     private metaTagService: Meta,
     private route: ActivatedRoute,
     private router: Router,
-    private builder: FormBuilder
+    private builder: FormBuilder,
+    private contact: ContactService
   ) { }
+
 
   ngOnInit() {
   //FormData
@@ -127,12 +130,19 @@ export class OiltankinstallersComponent implements OnInit {
           }
         ]
       }
-
     };  
+  }
 
-
-
-
+  onSubmit(FormData) {
+    console.log(FormData)
+    this.contact.PostMessage(FormData)
+    .subscribe(response => {
+    location.href = 'https://mailthis.to/confirm'
+    console.log(response)
+    }, error => {
+    console.warn(error.responseText)
+    console.log({ error })
+    })
   }
 
 }
